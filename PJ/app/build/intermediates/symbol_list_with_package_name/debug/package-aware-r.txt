@@ -2086,6 +2086,7 @@ id decelerateAndComplete
 id decor_content_parent
 id default_activity_button
 id delete
+id delete_history
 id deltaRelative
 id dependency_ordering
 id design_bottom_sheet
@@ -2150,6 +2151,9 @@ id groups
 id guideline
 id header_title
 id hideable
+id history_frame
+id history_img
+id history_title
 id home
 id homeAsUp
 id honorRequest
@@ -2315,6 +2319,7 @@ id search_button
 id search_close_btn
 id search_edit_frame
 id search_go_btn
+id search_history
 id search_in
 id search_mag_icon
 id search_menu

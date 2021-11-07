@@ -8,7 +8,7 @@ import androidx.room.RoomDatabase;
 
 import vn.edu.usth.pj.Save_Page;
 
-@Database(entities = {Save_Page.class}, version = 2)
+@Database(entities = {Save_Page.class}, version = 3)
 public abstract class SavedDatabase extends RoomDatabase {
     private static final String DATABASE_NAME ="saved.db";
     private static SavedDatabase instance;

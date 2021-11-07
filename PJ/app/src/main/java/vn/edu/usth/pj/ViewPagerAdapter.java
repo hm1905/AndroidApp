@@ -5,10 +5,10 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import vn.edu.usth.pj.MainActivity.Account;
-import vn.edu.usth.pj.MainActivity.Home;
-import vn.edu.usth.pj.MainActivity.Saved;
-import vn.edu.usth.pj.MainActivity.Search;
+import vn.edu.usth.pj.MainActivity.Fragment.Account;
+import vn.edu.usth.pj.MainActivity.Fragment.Home;
+import vn.edu.usth.pj.MainActivity.Fragment.Saved;
+import vn.edu.usth.pj.MainActivity.Fragment.Search;
 
 public class ViewPagerAdapter extends FragmentStateAdapter {
     public ViewPagerAdapter(@NonNull FragmentActivity fragmentActivity) {
@@ -31,4 +31,6 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
     public int getItemCount() {
         return 4;
     }
+
+
 }

@@ -19,11 +19,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import vn.edu.usth.pj.History.History;
 import vn.edu.usth.pj.R;
 import vn.edu.usth.pj.RestAPI.RetrofitAPI;
 import vn.edu.usth.pj.RestAPI.Service;
 import vn.edu.usth.pj.Save_Page;
 import vn.edu.usth.pj.SearchActivity.Searching_Activity;
+import vn.edu.usth.pj.database.History.HistoryDatabase;
 import vn.edu.usth.pj.database.SavedDatabase;
 
 
@@ -46,6 +48,10 @@ public class Article_Page extends AppCompatActivity {
             thumbnail = "none";
         }
         setPageContent(pageid);
+
+        History history = new History(pageid, title ,thumbnail);
+        HistoryDatabase.getInstance(getApplicationContext()).historyDAO().insertAll(history);
+
 
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomNavigationView_page);
         bottomNavigationView.setOnItemSelectedListener(new BottomNavigationView.OnItemSelectedListener() {

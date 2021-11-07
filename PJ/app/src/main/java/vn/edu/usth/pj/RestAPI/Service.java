@@ -5,6 +5,7 @@ import okhttp3.logging.HttpLoggingInterceptor;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 import vn.edu.usth.pj.RestAPI.API_CER;
+import vn.edu.usth.pj.testingAPI.API_REST;
 
 public class Service {
     private static Retrofit.Builder retrofitbuild =

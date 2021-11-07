@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey;
 
 @Entity(tableName = "Saved")
 public class Save_Page {
-    @PrimaryKey(autoGenerate = true)
+    @PrimaryKey
     private Integer pageid;
     private String title;
     private String desc;

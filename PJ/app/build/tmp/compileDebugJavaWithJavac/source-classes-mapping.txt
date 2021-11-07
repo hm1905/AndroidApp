@@ -8,13 +8,15 @@ vn/edu/usth/pj/SearchActivity/Searching_Activity.java
  vn.edu.usth.pj.SearchActivity.Searching_Activity
  vn.edu.usth.pj.SearchActivity.Searching_Activity$1
  vn.edu.usth.pj.SearchActivity.Searching_Activity$2
-vn/edu/usth/pj/MainActivity/Saved.java
- vn.edu.usth.pj.MainActivity.Saved
- vn.edu.usth.pj.MainActivity.Saved$1
+vn/edu/usth/pj/MainActivity/Fragment/Saved.java
+ vn.edu.usth.pj.MainActivity.Fragment.Saved
+ vn.edu.usth.pj.MainActivity.Fragment.Saved$1
 vn/edu/usth/pj/databinding/SettingsActivityBinding.java
  vn.edu.usth.pj.databinding.SettingsActivityBinding
 vn/edu/usth/pj/ViewPagerAdapter.java
  vn.edu.usth.pj.ViewPagerAdapter
+vn/edu/usth/pj/StringUtills.java
+ vn.edu.usth.pj.StringUtills
 vn/edu/usth/pj/RestAPI/RetrofitAPI.java
  vn.edu.usth.pj.RestAPI.RetrofitAPI
 vn/edu/usth/pj/databinding/SearchresultLayoutBinding.java
@@ -23,6 +25,8 @@ vn/edu/usth/pj/SettingsActivity.java
  vn.edu.usth.pj.SettingsActivity
  vn.edu.usth.pj.SettingsActivity$SettingsFragment
  vn.edu.usth.pj.SettingsActivity$SettingsFragment$1
+vn/edu/usth/pj/database/History/HistoryDatabase.java
+ vn.edu.usth.pj.database.History.HistoryDatabase
 vn/edu/usth/pj/databinding/FragmentHomeBinding.java
  vn.edu.usth.pj.databinding.FragmentHomeBinding
 vn/edu/usth/pj/BuildConfig.java
@@ -35,8 +39,18 @@ vn/edu/usth/pj/Article_Activity/Parse.java
  vn.edu.usth.pj.Article_Activity.Parse
 vn/edu/usth/pj/testingAPI/Urls.java
  vn.edu.usth.pj.testingAPI.Urls
+vn/edu/usth/pj/History/HistoryAdapter.java
+ vn.edu.usth.pj.History.HistoryAdapter
+ vn.edu.usth.pj.History.HistoryAdapter$1
+ vn.edu.usth.pj.History.HistoryAdapter$ViewHolder
+vn/edu/usth/pj/database/History/HistoryDAO.java
+ vn.edu.usth.pj.database.History.HistoryDAO
 vn/edu/usth/pj/databinding/ActivityPageBinding.java
  vn.edu.usth.pj.databinding.ActivityPageBinding
+vn/edu/usth/pj/MainActivity/Fragment/Account.java
+ vn.edu.usth.pj.MainActivity.Fragment.Account
+vn/edu/usth/pj/History/History.java
+ vn.edu.usth.pj.History.History
 vn/edu/usth/pj/Article_Activity/Article_Page.java
  vn.edu.usth.pj.Article_Activity.Article_Page
  vn.edu.usth.pj.Article_Activity.Article_Page$1
@@ -63,6 +77,8 @@ vn/edu/usth/pj/testingAPI/API_REST.java
  vn.edu.usth.pj.testingAPI.API_REST
 vn/edu/usth/pj/testingAPI/Lead.java
  vn.edu.usth.pj.testingAPI.Lead
+vn/edu/usth/pj/Article_Activity/Container/Section.java
+ vn.edu.usth.pj.Article_Activity.Container.Section
 vn/edu/usth/pj/databinding/SavedLayoutBinding.java
  vn.edu.usth.pj.databinding.SavedLayoutBinding
 vn/edu/usth/pj/View_Page.java
@@ -71,21 +87,16 @@ vn/edu/usth/pj/View_Page.java
  vn.edu.usth.pj.View_Page$ViewHolder
 vn/edu/usth/pj/databinding/NewsLayoutBinding.java
  vn.edu.usth.pj.databinding.NewsLayoutBinding
-vn/edu/usth/pj/MainActivity/Search.java
- vn.edu.usth.pj.MainActivity.Search
- vn.edu.usth.pj.MainActivity.Search$1
 vn/edu/usth/pj/databinding/HistoryLayoutBinding.java
  vn.edu.usth.pj.databinding.HistoryLayoutBinding
 vn/edu/usth/pj/MainPage/Articles.java
  vn.edu.usth.pj.MainPage.Articles
-vn/edu/usth/pj/MainActivity/Home.java
- vn.edu.usth.pj.MainActivity.Home
- vn.edu.usth.pj.MainActivity.Home$1
- vn.edu.usth.pj.MainActivity.Home$2
 vn/edu/usth/pj/SearchActivity/Varianttitles.java
  vn.edu.usth.pj.SearchActivity.Varianttitles
 vn/edu/usth/pj/RestAPI/Service.java
  vn.edu.usth.pj.RestAPI.Service
+vn/edu/usth/pj/Article_Activity/Container/Parse.java
+ vn.edu.usth.pj.Article_Activity.Container.Parse
 vn/edu/usth/pj/testingAPI/Lastmodifier.java
  vn.edu.usth.pj.testingAPI.Lastmodifier
 vn/edu/usth/pj/databinding/ActivityMainBinding.java
@@ -96,6 +107,11 @@ vn/edu/usth/pj/testingAPI/Remaining.java
  vn.edu.usth.pj.testingAPI.Remaining
 vn/edu/usth/pj/SearchActivity/Page.java
  vn.edu.usth.pj.SearchActivity.Page
+vn/edu/usth/pj/MainActivity/Fragment/Search.java
+ vn.edu.usth.pj.MainActivity.Fragment.Search
+ vn.edu.usth.pj.MainActivity.Fragment.Search$1
+ vn.edu.usth.pj.MainActivity.Fragment.Search$2
+ vn.edu.usth.pj.MainActivity.Fragment.Search$2$1
 vn/edu/usth/pj/databinding/FragmentSearchBinding.java
  vn.edu.usth.pj.databinding.FragmentSearchBinding
 vn/edu/usth/pj/Register.java
@@ -106,6 +122,8 @@ vn/edu/usth/pj/RestAPI/API_CER.java
  vn.edu.usth.pj.RestAPI.API_CER
 vn/edu/usth/pj/databinding/FragmentAccountBinding.java
  vn.edu.usth.pj.databinding.FragmentAccountBinding
+vn/edu/usth/pj/Article_Activity/Container/Contain.java
+ vn.edu.usth.pj.Article_Activity.Container.Contain
 vn/edu/usth/pj/MainActivity/MainActivity.java
  vn.edu.usth.pj.MainActivity.MainActivity
  vn.edu.usth.pj.MainActivity.MainActivity$1
@@ -115,12 +133,14 @@ vn/edu/usth/pj/Save_Page.java
  vn.edu.usth.pj.Save_Page
 vn/edu/usth/pj/testingAPI/Protection.java
  vn.edu.usth.pj.testingAPI.Protection
+vn/edu/usth/pj/MainActivity/Fragment/Home.java
+ vn.edu.usth.pj.MainActivity.Fragment.Home
+ vn.edu.usth.pj.MainActivity.Fragment.Home$1
+ vn.edu.usth.pj.MainActivity.Fragment.Home$2
 vn/edu/usth/pj/testingAPI/Section.java
  vn.edu.usth.pj.testingAPI.Section
 vn/edu/usth/pj/MainPage/Parse.java
  vn.edu.usth.pj.MainPage.Parse
-vn/edu/usth/pj/MainActivity/Account.java
- vn.edu.usth.pj.MainActivity.Account
 vn/edu/usth/pj/database/SavedDatabase.java
  vn.edu.usth.pj.database.SavedDatabase
 vn/edu/usth/pj/testingAPI/Example.java

@@ -4,6 +4,7 @@ import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.Query;
 import vn.edu.usth.pj.Article_Activity.Article_FM;
+import vn.edu.usth.pj.Article_Activity.Container.Contain;
 import vn.edu.usth.pj.MainPage.Articles;
 import vn.edu.usth.pj.SearchActivity.Example;
 
@@ -16,5 +17,8 @@ public interface RetrofitAPI {
 
     @GET(API_CER.API +"action=parse&prop=text&mobileformat=1")
     Call<Article_FM> getArticle_Page(@Query("pageid") Integer pageid);
+
+    @GET(API_CER.API +"action=parse&prop=sections&mobileformat=1")
+    Call<Contain> getContain(@Query("pageid") Integer pageid);
 
 }

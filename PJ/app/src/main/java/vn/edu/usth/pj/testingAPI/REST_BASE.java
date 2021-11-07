@@ -8,4 +8,5 @@ import retrofit2.http.GET;
 public interface REST_BASE {
     @GET("page/mobile-sections/Main-Page")
     Call<Example> getSample();
+
 }

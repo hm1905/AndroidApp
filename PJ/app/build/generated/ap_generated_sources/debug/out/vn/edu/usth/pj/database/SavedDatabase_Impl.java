@@ -27,12 +27,12 @@ public final class SavedDatabase_Impl extends SavedDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(2) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(3) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `Saved` (`pageid` INTEGER PRIMARY KEY AUTOINCREMENT, `title` TEXT, `desc` TEXT, `thumbnail` TEXT)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `Saved` (`pageid` INTEGER, `title` TEXT, `desc` TEXT, `thumbnail` TEXT, PRIMARY KEY(`pageid`))");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '962b31712e1f0339dfebe538438b6892')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1e16a9b22dc826312b8fd8ce38a65c5f')");
       }
 
       @Override
@@ -92,7 +92,7 @@ public final class SavedDatabase_Impl extends SavedDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "962b31712e1f0339dfebe538438b6892", "ab6a09be83d9e023b9548c2e2dc21c4b");
+    }, "1e16a9b22dc826312b8fd8ce38a65c5f", "f3edfb55f01471bcaddaf502880d6843");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

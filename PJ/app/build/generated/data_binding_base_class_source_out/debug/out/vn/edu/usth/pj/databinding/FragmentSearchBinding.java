@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import java.lang.NullPointerException;
@@ -21,14 +22,27 @@ public final class FragmentSearchBinding implements ViewBinding {
   private final RelativeLayout rootView;
 
   @NonNull
+  public final Button deleteHistory;
+
+  @NonNull
+  public final RelativeLayout historyFrame;
+
+  @NonNull
+  public final RecyclerView searchHistory;
+
+  @NonNull
   public final Button searchview;
 
   @NonNull
   public final TextView textHistory;
 
-  private FragmentSearchBinding(@NonNull RelativeLayout rootView, @NonNull Button searchview,
-      @NonNull TextView textHistory) {
+  private FragmentSearchBinding(@NonNull RelativeLayout rootView, @NonNull Button deleteHistory,
+      @NonNull RelativeLayout historyFrame, @NonNull RecyclerView searchHistory,
+      @NonNull Button searchview, @NonNull TextView textHistory) {
     this.rootView = rootView;
+    this.deleteHistory = deleteHistory;
+    this.historyFrame = historyFrame;
+    this.searchHistory = searchHistory;
     this.searchview = searchview;
     this.textHistory = textHistory;
   }
@@ -60,6 +74,24 @@ public final class FragmentSearchBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.delete_history;
+      Button deleteHistory = ViewBindings.findChildViewById(rootView, id);
+      if (deleteHistory == null) {
+        break missingId;
+      }
+
+      id = R.id.history_frame;
+      RelativeLayout historyFrame = ViewBindings.findChildViewById(rootView, id);
+      if (historyFrame == null) {
+        break missingId;
+      }
+
+      id = R.id.search_history;
+      RecyclerView searchHistory = ViewBindings.findChildViewById(rootView, id);
+      if (searchHistory == null) {
+        break missingId;
+      }
+
       id = R.id.searchview;
       Button searchview = ViewBindings.findChildViewById(rootView, id);
       if (searchview == null) {
@@ -72,7 +104,8 @@ public final class FragmentSearchBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentSearchBinding((RelativeLayout) rootView, searchview, textHistory);
+      return new FragmentSearchBinding((RelativeLayout) rootView, deleteHistory, historyFrame,
+          searchHistory, searchview, textHistory);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

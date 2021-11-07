@@ -1,5 +1,7 @@
 package vn.edu.usth.pj.database;
 
+import static androidx.room.OnConflictStrategy.IGNORE;
+
 import androidx.room.Dao;
 import androidx.room.Delete;
 import androidx.room.Insert;
@@ -17,7 +19,7 @@ public interface SaveDAO {
     @Query("SELECT * FROM Saved WHERE pageid IN (:Saved_int)")
     List<Save_Page> loadAllByIds(int[] Saved_int);
 
-    @Insert
+    @Insert(onConflict = IGNORE)
     void insertAll(Save_Page save_page);
 
     @Delete

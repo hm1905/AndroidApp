@@ -34,7 +34,7 @@ public final class SaveDAO_Impl implements SaveDAO {
     this.__insertionAdapterOfSave_Page = new EntityInsertionAdapter<Save_Page>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `Saved` (`pageid`,`title`,`desc`,`thumbnail`) VALUES (?,?,?,?)";
+        return "INSERT OR IGNORE INTO `Saved` (`pageid`,`title`,`desc`,`thumbnail`) VALUES (?,?,?,?)";
       }
 
       @Override

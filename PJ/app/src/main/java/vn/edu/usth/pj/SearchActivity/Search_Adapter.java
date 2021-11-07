@@ -17,6 +17,7 @@ import java.util.List;
 
 
 import vn.edu.usth.pj.Article_Activity.Article_Page;
+import vn.edu.usth.pj.History.History;
 import vn.edu.usth.pj.R;
 
 
