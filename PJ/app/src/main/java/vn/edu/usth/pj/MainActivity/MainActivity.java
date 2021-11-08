@@ -7,8 +7,10 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.Html;
 import android.view.MenuItem;
 import android.view.View;
 
@@ -20,7 +22,6 @@ import vn.edu.usth.pj.SettingsActivity;
 import vn.edu.usth.pj.ViewPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
-//831ec66c83c84a2792b943a37e1e3e56
     BottomNavigationView bottomNavigationView;
     FloatingActionButton floatAct;
     ViewPager2 viewPager2;
@@ -32,6 +33,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(getResources().getColor(android.R.color.transparent)));
+        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + getString(R.string.app_name) + "</font>"));
+
 
         viewPager2 = (ViewPager2) findViewById(R.id.reFrame);
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomnavigationbar);
@@ -47,18 +52,18 @@ public class MainActivity extends AppCompatActivity {
                 switch (position){
                     case 0:
                         bottomNavigationView.getMenu().findItem(R.id.home).setChecked(true);
-                        setTitle("WikipediA");
+                        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + getString(R.string.app_name) + "</font>"));
                         break;
                     case 1:
                         bottomNavigationView.getMenu().findItem(R.id.search).setChecked(true);
-                        setTitle("Search");
+                        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Search" + "</font>"));
                         break;
                     case 2:
                         bottomNavigationView.getMenu().findItem(R.id.personal).setChecked(true);
                         break;
                     case 3:
                         bottomNavigationView.getMenu().findItem(R.id.saved).setChecked(true);
-                        setTitle("Saved");
+                        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Saved"+ "</font>"));
                         break;
                 }
             }

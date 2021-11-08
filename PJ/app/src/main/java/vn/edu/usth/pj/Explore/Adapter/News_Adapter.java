@@ -50,6 +50,7 @@ public class News_Adapter extends RecyclerView.Adapter<News_Adapter.ViewHolder>{
 //            }
 //        }
 
+
     }
 
     @Override

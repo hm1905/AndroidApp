@@ -10,10 +10,10 @@ import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -22,6 +22,9 @@ import vn.edu.usth.pj.R;
 public final class FragmentExploreBinding implements ViewBinding {
   @NonNull
   private final ScrollView rootView;
+
+  @NonNull
+  public final TextView featured;
 
   @NonNull
   public final TextView news;
@@ -33,7 +36,7 @@ public final class FragmentExploreBinding implements ViewBinding {
   public final Button searchviewHome;
 
   @NonNull
-  public final CardView tfa;
+  public final MaterialCardView tfa;
 
   @NonNull
   public final TextView tfaDesc;
@@ -53,11 +56,13 @@ public final class FragmentExploreBinding implements ViewBinding {
   @NonNull
   public final RecyclerView topreadRecycle;
 
-  private FragmentExploreBinding(@NonNull ScrollView rootView, @NonNull TextView news,
-      @NonNull RecyclerView newsRecycle, @NonNull Button searchviewHome, @NonNull CardView tfa,
-      @NonNull TextView tfaDesc, @NonNull TextView tfaExtract, @NonNull ImageView tfaImg,
-      @NonNull TextView tfaTitle, @NonNull TextView topread, @NonNull RecyclerView topreadRecycle) {
+  private FragmentExploreBinding(@NonNull ScrollView rootView, @NonNull TextView featured,
+      @NonNull TextView news, @NonNull RecyclerView newsRecycle, @NonNull Button searchviewHome,
+      @NonNull MaterialCardView tfa, @NonNull TextView tfaDesc, @NonNull TextView tfaExtract,
+      @NonNull ImageView tfaImg, @NonNull TextView tfaTitle, @NonNull TextView topread,
+      @NonNull RecyclerView topreadRecycle) {
     this.rootView = rootView;
+    this.featured = featured;
     this.news = news;
     this.newsRecycle = newsRecycle;
     this.searchviewHome = searchviewHome;
@@ -97,6 +102,12 @@ public final class FragmentExploreBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.featured;
+      TextView featured = ViewBindings.findChildViewById(rootView, id);
+      if (featured == null) {
+        break missingId;
+      }
+
       id = R.id.news;
       TextView news = ViewBindings.findChildViewById(rootView, id);
       if (news == null) {
@@ -116,7 +127,7 @@ public final class FragmentExploreBinding implements ViewBinding {
       }
 
       id = R.id.tfa;
-      CardView tfa = ViewBindings.findChildViewById(rootView, id);
+      MaterialCardView tfa = ViewBindings.findChildViewById(rootView, id);
       if (tfa == null) {
         break missingId;
       }
@@ -157,8 +168,8 @@ public final class FragmentExploreBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentExploreBinding((ScrollView) rootView, news, newsRecycle, searchviewHome,
-          tfa, tfaDesc, tfaExtract, tfaImg, tfaTitle, topread, topreadRecycle);
+      return new FragmentExploreBinding((ScrollView) rootView, featured, news, newsRecycle,
+          searchviewHome, tfa, tfaDesc, tfaExtract, tfaImg, tfaTitle, topread, topreadRecycle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

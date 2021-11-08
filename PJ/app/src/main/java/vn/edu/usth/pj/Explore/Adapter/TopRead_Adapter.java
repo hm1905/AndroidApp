@@ -1,6 +1,7 @@
 package vn.edu.usth.pj.Explore.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
+import vn.edu.usth.pj.Article_Activity.Article_Page;
 import vn.edu.usth.pj.R;
 import vn.edu.usth.pj.SearchActivity.Page;
 import vn.edu.usth.pj.testingAPI.Explore.mostread.Article;
@@ -45,6 +47,15 @@ public class TopRead_Adapter extends RecyclerView.Adapter<TopRead_Adapter.ViewHo
         if (article.getThumbnail() != null){
             Picasso.get().load(article.getThumbnail().getSource()).into(holder.topread_thumb);
         }
+
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(context, Article_Page.class);
+                i.putExtra("pageid", TopreadArrayList.get(holder.getAdapterPosition()).getPageid());
+                context.startActivity(i);
+            }
+        });
 
     }
 

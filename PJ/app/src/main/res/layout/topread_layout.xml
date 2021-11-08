@@ -33,10 +33,11 @@
 
         <ImageView
             android:id="@+id/topread_thumb"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
             android:layout_toRightOf="@+id/topread_title"
-            tools:srcCompat="@tools:sample/avatars" />
+            tools:srcCompat="@tools:sample/avatars"
+            android:scaleType="fitXY"/>
     </RelativeLayout>
 
 </androidx.cardview.widget.CardView>

@@ -3,6 +3,7 @@ package vn.edu.usth.pj.Explore;
 import android.content.Intent;
 import android.os.Bundle;
 
+import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -16,6 +17,7 @@ import android.widget.Button;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import vn.edu.usth.pj.Article_Activity.Article_Page;
 import vn.edu.usth.pj.Explore.Adapter.News_Adapter;
 import vn.edu.usth.pj.Explore.Adapter.TopRead_Adapter;
 import vn.edu.usth.pj.R;
@@ -58,6 +60,7 @@ public class Explore extends Fragment {
 
     private TextView tfa_title, tfa_desc, tfa_extract;
     private ImageView tfa_thumb;
+    private CardView cardView;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -119,6 +122,7 @@ public class Explore extends Fragment {
         tfa_title = rootView.findViewById(R.id.tfa_title);
         tfa_desc = rootView.findViewById(R.id.tfa_desc);
         tfa_thumb = rootView.findViewById(R.id.tfa_img);
+        cardView = rootView.findViewById(R.id.tfa);
 
         rmostread = rootView.findViewById(R.id.topread_recycle);
         rmostread.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -141,6 +145,15 @@ public class Explore extends Fragment {
 //                    if(explore.getTfa().getOriginalimage().getSource() != null){
 //                        Picasso.get().load(explore.getTfa().getOriginalimage().getSource()).into(tfa_thumb);
 //                    }
+
+                    cardView.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View view) {
+                            Intent i = new Intent(getContext(), Article_Page.class);
+                            i.putExtra("pageid", explore.getTfa().getPageid());
+                            getContext().startActivity(i);
+                        }
+                    });
 
                     topAP = new TopRead_Adapter(explore.getMostread().getArticles() ,getContext());
                     rmostread.setAdapter(topAP);

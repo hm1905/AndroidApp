@@ -26,6 +26,18 @@ public class Article {
     @Expose
     private String extract;
 
+    @SerializedName("pageid")
+    @Expose
+    private Integer pageid;
+
+    public Integer getPageid() {
+        return pageid;
+    }
+
+    public void setPageid(Integer pageid) {
+        this.pageid = pageid;
+    }
+
     public String getTitle() {
         return title;
     }

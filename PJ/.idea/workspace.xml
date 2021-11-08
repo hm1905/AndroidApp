@@ -29,10 +29,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="valueResourceFile" />
-        <option value="resourceFile" />
         <option value="Interface" />
         <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -73,6 +73,7 @@
       <recent name="vn.edu.usth.pj" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\res\drawable" />
       <recent name="C:\Users\ADMIN\AndroidStudioProjects\PJ\app\sampledata\Cover" />
     </key>
