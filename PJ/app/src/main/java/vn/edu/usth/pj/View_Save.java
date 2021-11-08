@@ -12,7 +12,6 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.squareup.picasso.Picasso;
-import com.squareup.picasso.Target;
 
 import java.util.List;
 
@@ -66,9 +65,9 @@ public class View_Save extends RecyclerView.Adapter<View_Save.ViewHolder> {
         private ImageView save_thumbnail;
         public ViewHolder(android.view.View itemView) {
             super(itemView);
-            save_title = itemView.findViewById(R.id.save_title);
-            save_desc = itemView.findViewById(R.id.save_desc);
-            save_thumbnail = itemView.findViewById(R.id.save_thumbnail);
+            save_title = itemView.findViewById(R.id.topread_title);
+            save_desc = itemView.findViewById(R.id.topread_desc);
+            save_thumbnail = itemView.findViewById(R.id.topread_thumb);
         }
     }
 

@@ -21,20 +21,16 @@ public final class NewsLayoutBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final TextView sub;
+  public final TextView newsStory;
 
   @NonNull
-  public final TextView text;
+  public final ImageView newsThumb;
 
-  @NonNull
-  public final ImageView view;
-
-  private NewsLayoutBinding(@NonNull CardView rootView, @NonNull TextView sub,
-      @NonNull TextView text, @NonNull ImageView view) {
+  private NewsLayoutBinding(@NonNull CardView rootView, @NonNull TextView newsStory,
+      @NonNull ImageView newsThumb) {
     this.rootView = rootView;
-    this.sub = sub;
-    this.text = text;
-    this.view = view;
+    this.newsStory = newsStory;
+    this.newsThumb = newsThumb;
   }
 
   @Override
@@ -64,25 +60,19 @@ public final class NewsLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.sub;
-      TextView sub = ViewBindings.findChildViewById(rootView, id);
-      if (sub == null) {
+      id = R.id.news_story;
+      TextView newsStory = ViewBindings.findChildViewById(rootView, id);
+      if (newsStory == null) {
         break missingId;
       }
 
-      id = R.id.text;
-      TextView text = ViewBindings.findChildViewById(rootView, id);
-      if (text == null) {
+      id = R.id.news_thumb;
+      ImageView newsThumb = ViewBindings.findChildViewById(rootView, id);
+      if (newsThumb == null) {
         break missingId;
       }
 
-      id = R.id.view;
-      ImageView view = ViewBindings.findChildViewById(rootView, id);
-      if (view == null) {
-        break missingId;
-      }
-
-      return new NewsLayoutBinding((CardView) rootView, sub, text, view);
+      return new NewsLayoutBinding((CardView) rootView, newsStory, newsThumb);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

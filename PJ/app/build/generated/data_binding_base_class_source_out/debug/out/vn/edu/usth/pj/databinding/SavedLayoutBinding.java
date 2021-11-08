@@ -21,20 +21,20 @@ public final class SavedLayoutBinding implements ViewBinding {
   private final CardView rootView;
 
   @NonNull
-  public final TextView saveDesc;
+  public final TextView topreadDesc;
 
   @NonNull
-  public final ImageView saveThumbnail;
+  public final ImageView topreadThumb;
 
   @NonNull
-  public final TextView saveTitle;
+  public final TextView topreadTitle;
 
-  private SavedLayoutBinding(@NonNull CardView rootView, @NonNull TextView saveDesc,
-      @NonNull ImageView saveThumbnail, @NonNull TextView saveTitle) {
+  private SavedLayoutBinding(@NonNull CardView rootView, @NonNull TextView topreadDesc,
+      @NonNull ImageView topreadThumb, @NonNull TextView topreadTitle) {
     this.rootView = rootView;
-    this.saveDesc = saveDesc;
-    this.saveThumbnail = saveThumbnail;
-    this.saveTitle = saveTitle;
+    this.topreadDesc = topreadDesc;
+    this.topreadThumb = topreadThumb;
+    this.topreadTitle = topreadTitle;
   }
 
   @Override
@@ -64,25 +64,25 @@ public final class SavedLayoutBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.save_desc;
-      TextView saveDesc = ViewBindings.findChildViewById(rootView, id);
-      if (saveDesc == null) {
+      id = R.id.topread_desc;
+      TextView topreadDesc = ViewBindings.findChildViewById(rootView, id);
+      if (topreadDesc == null) {
         break missingId;
       }
 
-      id = R.id.save_thumbnail;
-      ImageView saveThumbnail = ViewBindings.findChildViewById(rootView, id);
-      if (saveThumbnail == null) {
+      id = R.id.topread_thumb;
+      ImageView topreadThumb = ViewBindings.findChildViewById(rootView, id);
+      if (topreadThumb == null) {
         break missingId;
       }
 
-      id = R.id.save_title;
-      TextView saveTitle = ViewBindings.findChildViewById(rootView, id);
-      if (saveTitle == null) {
+      id = R.id.topread_title;
+      TextView topreadTitle = ViewBindings.findChildViewById(rootView, id);
+      if (topreadTitle == null) {
         break missingId;
       }
 
-      return new SavedLayoutBinding((CardView) rootView, saveDesc, saveThumbnail, saveTitle);
+      return new SavedLayoutBinding((CardView) rootView, topreadDesc, topreadThumb, topreadTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

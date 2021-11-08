@@ -50,7 +50,7 @@ public class View_Page extends RecyclerView.Adapter<View_Page.ViewHolder> implem
         private TextView textV;
         public ViewHolder(@NonNull android.view.View itemView) {
             super(itemView);
-            textV = itemView.findViewById(R.id.text);
+            textV = itemView.findViewById(R.id.tfa_title);
         }
     }
 

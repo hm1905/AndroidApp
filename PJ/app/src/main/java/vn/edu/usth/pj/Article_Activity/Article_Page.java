@@ -29,6 +29,7 @@ import vn.edu.usth.pj.database.History.HistoryDatabase;
 import vn.edu.usth.pj.database.SavedDatabase;
 
 
+
 public class Article_Page extends AppCompatActivity {
     String title, desc, thumbnail;
     Integer pageid;

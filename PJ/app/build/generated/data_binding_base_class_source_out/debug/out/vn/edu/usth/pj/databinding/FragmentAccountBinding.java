@@ -22,29 +22,29 @@ public final class FragmentAccountBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final Button button;
-
-  @NonNull
   public final Button button3;
-
-  @NonNull
-  public final EditText editTextTextEmailAddress;
-
-  @NonNull
-  public final EditText editTextTextPassword;
 
   @NonNull
   public final ImageView imageView;
 
-  private FragmentAccountBinding(@NonNull ConstraintLayout rootView, @NonNull Button button,
-      @NonNull Button button3, @NonNull EditText editTextTextEmailAddress,
-      @NonNull EditText editTextTextPassword, @NonNull ImageView imageView) {
+  @NonNull
+  public final Button login;
+
+  @NonNull
+  public final EditText password;
+
+  @NonNull
+  public final EditText username;
+
+  private FragmentAccountBinding(@NonNull ConstraintLayout rootView, @NonNull Button button3,
+      @NonNull ImageView imageView, @NonNull Button login, @NonNull EditText password,
+      @NonNull EditText username) {
     this.rootView = rootView;
-    this.button = button;
     this.button3 = button3;
-    this.editTextTextEmailAddress = editTextTextEmailAddress;
-    this.editTextTextPassword = editTextTextPassword;
     this.imageView = imageView;
+    this.login = login;
+    this.password = password;
+    this.username = username;
   }
 
   @Override
@@ -74,27 +74,9 @@ public final class FragmentAccountBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.button;
-      Button button = ViewBindings.findChildViewById(rootView, id);
-      if (button == null) {
-        break missingId;
-      }
-
       id = R.id.button3;
       Button button3 = ViewBindings.findChildViewById(rootView, id);
       if (button3 == null) {
-        break missingId;
-      }
-
-      id = R.id.editTextTextEmailAddress;
-      EditText editTextTextEmailAddress = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextEmailAddress == null) {
-        break missingId;
-      }
-
-      id = R.id.editTextTextPassword;
-      EditText editTextTextPassword = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPassword == null) {
         break missingId;
       }
 
@@ -104,8 +86,26 @@ public final class FragmentAccountBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentAccountBinding((ConstraintLayout) rootView, button, button3,
-          editTextTextEmailAddress, editTextTextPassword, imageView);
+      id = R.id.login;
+      Button login = ViewBindings.findChildViewById(rootView, id);
+      if (login == null) {
+        break missingId;
+      }
+
+      id = R.id.password;
+      EditText password = ViewBindings.findChildViewById(rootView, id);
+      if (password == null) {
+        break missingId;
+      }
+
+      id = R.id.username;
+      EditText username = ViewBindings.findChildViewById(rootView, id);
+      if (username == null) {
+        break missingId;
+      }
+
+      return new FragmentAccountBinding((ConstraintLayout) rootView, button3, imageView, login,
+          password, username);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

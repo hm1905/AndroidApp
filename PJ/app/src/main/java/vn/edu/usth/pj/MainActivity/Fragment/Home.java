@@ -39,7 +39,6 @@ public class Home extends Fragment {
 
     private RecyclerView rview;
     private View_Page view_page;
-    SearchView searchView;
 
 
     // TODO: Rename and change types of parameters
@@ -135,12 +134,7 @@ public class Home extends Fragment {
 //                textV.getSettings().setLoadWithOverviewMode(true);
 //                textV.getSettings().setUseWideViewPort(true);
 //
-//                List<Section> sections = main.getLead().getSections();
-//                for (Section i : sections){
-//                    textV.getSettings().setLoadWithOverviewMode(true);
-//                    textV.getSettings().setUseWideViewPort(true);
-//                    textV.loadData(i.getText(),"text/html; charset=UTF-8", null);
-//                }
+
 
                 String link = StringUtills.fromHtml(main.getParse().getText());
 

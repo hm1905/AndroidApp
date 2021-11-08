@@ -14,6 +14,7 @@ import retrofit2.Response;
 import vn.edu.usth.pj.R;
 import vn.edu.usth.pj.RestAPI.RetrofitAPI;
 import vn.edu.usth.pj.RestAPI.Service;
+import vn.edu.usth.pj.testingAPI.Service2;
 
 
 public class Searching_Activity extends AppCompatActivity {

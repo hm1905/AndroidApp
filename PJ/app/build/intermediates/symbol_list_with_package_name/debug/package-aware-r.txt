@@ -2038,7 +2038,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button
 id button2
 id button3
 id buttonPanel
@@ -2115,8 +2114,6 @@ id easeIn
 id easeInOut
 id easeOut
 id east
-id editTextTextEmailAddress
-id editTextTextPassword
 id edit_query
 id elastic
 id end
@@ -2185,6 +2182,7 @@ id line3
 id linear
 id listMode
 id list_item
+id login
 id masked
 id match_constraint
 id match_parent
@@ -2250,7 +2248,11 @@ id navigation_header_container
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
+id news
 id news_ap
+id news_recycle
+id news_story
+id news_thumb
 id noScroll
 id noState
 id none
@@ -2271,6 +2273,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id password
 id password_toggle
 id path
 id pathRelative
@@ -2296,12 +2299,9 @@ id right_side
 id rounded
 id row_index_key
 id save
-id save_desc
 id save_home
 id save_non_transition_alpha
 id save_overlay_view
-id save_thumbnail
-id save_title
 id saved
 id sawtooth
 id scale
@@ -2374,7 +2374,6 @@ id staticPostLayout
 id status_bar_latest_event_content
 id stop
 id stretch
-id sub
 id submenuarrow
 id submit_area
 id supportScrollUp
@@ -2418,6 +2417,11 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id tfa
+id tfa_desc
+id tfa_extract
+id tfa_img
+id tfa_title
 id time
 id title
 id titleDividerNoCustom
@@ -2426,6 +2430,11 @@ id toggle
 id toolbar
 id top
 id topPanel
+id topread
+id topread_desc
+id topread_recycle
+id topread_thumb
+id topread_title
 id touch_outside
 id transitionToEnd
 id transitionToStart
@@ -2441,8 +2450,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id username
 id vertical_only
-id view
 id view_offset_helper
 id view_transition
 id view_tree_lifecycle_owner
@@ -2548,6 +2557,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout expand_button
 layout fragment_account
+layout fragment_explore
 layout fragment_home
 layout fragment_saved
 layout fragment_search
@@ -2650,6 +2660,7 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
+layout topread_layout
 menu menu_bar
 menu page_menu
 menu save_menu

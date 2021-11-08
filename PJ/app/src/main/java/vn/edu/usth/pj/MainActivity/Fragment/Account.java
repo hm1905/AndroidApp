@@ -8,8 +8,13 @@ import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import vn.edu.usth.pj.R;
+
+
 
 /**
  * A simple {@link Fragment} subclass.
@@ -62,7 +67,23 @@ public class Account extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_account, container, false);
+        View rootview = inflater.inflate(R.layout.fragment_account, container, false);
+
+        EditText editname = rootview.findViewById(R.id.username);
+        EditText editword = rootview.findViewById(R.id.password);
+
+        Button login = rootview.findViewById(R.id.login);
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String username = editname.getText().toString();
+                String password = editword.getText().toString();
+
+            }
+        });
+
+        return rootview;
     }
 
     @Override

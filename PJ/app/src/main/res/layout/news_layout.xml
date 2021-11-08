@@ -13,41 +13,26 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/view"
+            android:id="@+id/news_thumb"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:scaleType="centerInside"
-            android:adjustViewBounds="true"/>
+            android:adjustViewBounds="true"
+            android:scaleType="centerInside" />
 
         <TextView
-            android:id="@+id/text"
+            android:id="@+id/news_story"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/view"
+            android:layout_below="@id/news_thumb"
             android:layout_marginStart="3dp"
             android:layout_marginTop="3dp"
             android:layout_marginEnd="3dp"
             android:layout_marginBottom="3dp"
-            android:maxLines="2"
+            android:maxLines="3"
             android:padding="3dp"
             android:text="New Heading"
             android:textColor="@color/black"
-            android:textSize="18sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/sub"
-            android:layout_below="@id/text"
-            android:textColor="@color/black"
-            android:text="Sub Heading"
-            android:textStyle="bold"
-            android:padding="3dp"
-            android:maxLines="3"
-            android:layout_margin="3dp"/>
-
-
+            android:textSize="18sp" />
 
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

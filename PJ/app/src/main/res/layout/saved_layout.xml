@@ -12,7 +12,7 @@
         android:layout_height="wrap_content" >
 
         <TextView
-            android:id="@+id/save_title"
+            android:id="@+id/topread_title"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
             android:maxLines="2"
@@ -23,10 +23,10 @@
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/save_desc"
+            android:id="@+id/topread_desc"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/save_title"
+            android:layout_below="@+id/topread_title"
             android:maxLines="3"
             android:padding="3dp"
             android:text="Desc"
@@ -34,10 +34,10 @@
             android:textSize="14sp" />
 
         <ImageView
-            android:id="@+id/save_thumbnail"
+            android:id="@+id/topread_thumb"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_toRightOf="@+id/save_title"
+            android:layout_toRightOf="@+id/topread_title"
             tools:srcCompat="@tools:sample/avatars" />
     </RelativeLayout>
 

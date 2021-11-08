@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
+import vn.edu.usth.pj.Explore.Explore;
 import vn.edu.usth.pj.MainActivity.Fragment.Account;
 import vn.edu.usth.pj.MainActivity.Fragment.Home;
 import vn.edu.usth.pj.MainActivity.Fragment.Saved;
@@ -19,7 +20,7 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
     @Override
     public Fragment createFragment(int position) {
         switch (position) {
-            case 0: return new Home();
+            case 0: return new Explore();
             case 1: return new Search();
             case 2: return new Account();
             case 3: return new Saved();

@@ -52,8 +52,16 @@
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\activity_fullscreen.xml"
     },
     {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_explore.xml",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\fragment_explore.xml"
+    },
+    {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\settings_activity.xml",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\settings_activity.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\topread_layout.xml",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\topread_layout.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_search.xml",

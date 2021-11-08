@@ -1,24 +1,42 @@
+vn/edu/usth/pj/Explore/Explore.java
+ vn.edu.usth.pj.Explore.Explore
+ vn.edu.usth.pj.Explore.Explore$1
+ vn.edu.usth.pj.Explore.Explore$2
 vn/edu/usth/pj/SearchActivity/Search_Adapter.java
  vn.edu.usth.pj.SearchActivity.Search_Adapter
  vn.edu.usth.pj.SearchActivity.Search_Adapter$1
  vn.edu.usth.pj.SearchActivity.Search_Adapter$ViewHolder
 vn/edu/usth/pj/databinding/ActivitySearchBinding.java
  vn.edu.usth.pj.databinding.ActivitySearchBinding
+vn/edu/usth/pj/testingAPI/Explore/tfa/Coordinates.java
+ vn.edu.usth.pj.testingAPI.Explore.tfa.Coordinates
+vn/edu/usth/pj/Explore/Adapter/TopRead_Adapter.java
+ vn.edu.usth.pj.Explore.Adapter.TopRead_Adapter
+ vn.edu.usth.pj.Explore.Adapter.TopRead_Adapter$ViewHolder
 vn/edu/usth/pj/SearchActivity/Searching_Activity.java
  vn.edu.usth.pj.SearchActivity.Searching_Activity
  vn.edu.usth.pj.SearchActivity.Searching_Activity$1
  vn.edu.usth.pj.SearchActivity.Searching_Activity$2
+vn/edu/usth/pj/testingAPI/Explore/onthisday/Page.java
+ vn.edu.usth.pj.testingAPI.Explore.onthisday.Page
 vn/edu/usth/pj/MainActivity/Fragment/Saved.java
  vn.edu.usth.pj.MainActivity.Fragment.Saved
  vn.edu.usth.pj.MainActivity.Fragment.Saved$1
+vn/edu/usth/pj/testingAPI/Explore/tfa/Originalimage.java
+ vn.edu.usth.pj.testingAPI.Explore.tfa.Originalimage
 vn/edu/usth/pj/databinding/SettingsActivityBinding.java
  vn.edu.usth.pj.databinding.SettingsActivityBinding
 vn/edu/usth/pj/ViewPagerAdapter.java
  vn.edu.usth.pj.ViewPagerAdapter
+vn/edu/usth/pj/testingAPI/Explore2/Namespace.java
+ vn.edu.usth.pj.testingAPI.Explore2.Namespace
 vn/edu/usth/pj/StringUtills.java
  vn.edu.usth.pj.StringUtills
 vn/edu/usth/pj/RestAPI/RetrofitAPI.java
  vn.edu.usth.pj.RestAPI.RetrofitAPI
+vn/edu/usth/pj/Explore/Adapter/News_Adapter.java
+ vn.edu.usth.pj.Explore.Adapter.News_Adapter
+ vn.edu.usth.pj.Explore.Adapter.News_Adapter$ViewHolder
 vn/edu/usth/pj/databinding/SearchresultLayoutBinding.java
  vn.edu.usth.pj.databinding.SearchresultLayoutBinding
 vn/edu/usth/pj/SettingsActivity.java
@@ -27,28 +45,37 @@ vn/edu/usth/pj/SettingsActivity.java
  vn.edu.usth.pj.SettingsActivity$SettingsFragment$1
 vn/edu/usth/pj/database/History/HistoryDatabase.java
  vn.edu.usth.pj.database.History.HistoryDatabase
+vn/edu/usth/pj/testingAPI/Explore/news/Thumbnail__2.java
+ vn.edu.usth.pj.testingAPI.Explore.news.Thumbnail__2
 vn/edu/usth/pj/databinding/FragmentHomeBinding.java
  vn.edu.usth.pj.databinding.FragmentHomeBinding
 vn/edu/usth/pj/BuildConfig.java
  vn.edu.usth.pj.BuildConfig
+vn/edu/usth/pj/databinding/TopreadLayoutBinding.java
+ vn.edu.usth.pj.databinding.TopreadLayoutBinding
 vn/edu/usth/pj/Article_Activity/Article_FM.java
  vn.edu.usth.pj.Article_Activity.Article_FM
 vn/edu/usth/pj/testingAPI/REST_BASE.java
  vn.edu.usth.pj.testingAPI.REST_BASE
 vn/edu/usth/pj/Article_Activity/Parse.java
  vn.edu.usth.pj.Article_Activity.Parse
-vn/edu/usth/pj/testingAPI/Urls.java
- vn.edu.usth.pj.testingAPI.Urls
+vn/edu/usth/pj/testingAPI/Explore/mostread/Article.java
+ vn.edu.usth.pj.testingAPI.Explore.mostread.Article
 vn/edu/usth/pj/History/HistoryAdapter.java
  vn.edu.usth.pj.History.HistoryAdapter
  vn.edu.usth.pj.History.HistoryAdapter$1
  vn.edu.usth.pj.History.HistoryAdapter$ViewHolder
 vn/edu/usth/pj/database/History/HistoryDAO.java
  vn.edu.usth.pj.database.History.HistoryDAO
+vn/edu/usth/pj/testingAPI/Explore2/Titles.java
+ vn.edu.usth.pj.testingAPI.Explore2.Titles
+vn/edu/usth/pj/testingAPI/Explore/news/Timestamp__1.java
+ vn.edu.usth.pj.testingAPI.Explore.news.Timestamp__1
 vn/edu/usth/pj/databinding/ActivityPageBinding.java
  vn.edu.usth.pj.databinding.ActivityPageBinding
 vn/edu/usth/pj/MainActivity/Fragment/Account.java
  vn.edu.usth.pj.MainActivity.Fragment.Account
+ vn.edu.usth.pj.MainActivity.Fragment.Account$1
 vn/edu/usth/pj/History/History.java
  vn.edu.usth.pj.History.History
 vn/edu/usth/pj/Article_Activity/Article_Page.java
@@ -57,56 +84,84 @@ vn/edu/usth/pj/Article_Activity/Article_Page.java
  vn.edu.usth.pj.Article_Activity.Article_Page$2
 vn/edu/usth/pj/SearchActivity/Query.java
  vn.edu.usth.pj.SearchActivity.Query
+vn/edu/usth/pj/testingAPI/Explore/tfa/Thumbnail.java
+ vn.edu.usth.pj.testingAPI.Explore.tfa.Thumbnail
+vn/edu/usth/pj/testingAPI/Explore/onthisday/Onthisday.java
+ vn.edu.usth.pj.testingAPI.Explore.onthisday.Onthisday
 vn/edu/usth/pj/View_Save.java
  vn.edu.usth.pj.View_Save
  vn.edu.usth.pj.View_Save$1
  vn.edu.usth.pj.View_Save$ViewHolder
+vn/edu/usth/pj/testingAPI/Explore/news/News.java
+ vn.edu.usth.pj.testingAPI.Explore.news.News
 vn/edu/usth/pj/databinding/FragmentSavedBinding.java
  vn.edu.usth.pj.databinding.FragmentSavedBinding
+vn/edu/usth/pj/testingAPI/Explore/image/Image.java
+ vn.edu.usth.pj.testingAPI.Explore.image.Image
+vn/edu/usth/pj/testingAPI/Explore/news/Coordinates__1.java
+ vn.edu.usth.pj.testingAPI.Explore.news.Coordinates__1
 vn/edu/usth/pj/SearchActivity/Pageprops.java
  vn.edu.usth.pj.SearchActivity.Pageprops
+vn/edu/usth/pj/testingAPI/Explore/news/Link.java
+ vn.edu.usth.pj.testingAPI.Explore.news.Link
 vn/edu/usth/pj/database/SaveDAO.java
  vn.edu.usth.pj.database.SaveDAO
 vn/edu/usth/pj/SearchActivity/Example.java
  vn.edu.usth.pj.SearchActivity.Example
-vn/edu/usth/pj/testingAPI/Image.java
- vn.edu.usth.pj.testingAPI.Image
+vn/edu/usth/pj/testingAPI/Explore/onthisday/Originalimage__2.java
+ vn.edu.usth.pj.testingAPI.Explore.onthisday.Originalimage__2
 vn/edu/usth/pj/SearchActivity/Thumbnail.java
  vn.edu.usth.pj.SearchActivity.Thumbnail
 vn/edu/usth/pj/testingAPI/API_REST.java
  vn.edu.usth.pj.testingAPI.API_REST
-vn/edu/usth/pj/testingAPI/Lead.java
- vn.edu.usth.pj.testingAPI.Lead
+vn/edu/usth/pj/testingAPI/Explore/image/Image__1.java
+ vn.edu.usth.pj.testingAPI.Explore.image.Image__1
 vn/edu/usth/pj/Article_Activity/Container/Section.java
  vn.edu.usth.pj.Article_Activity.Container.Section
 vn/edu/usth/pj/databinding/SavedLayoutBinding.java
  vn.edu.usth.pj.databinding.SavedLayoutBinding
+vn/edu/usth/pj/testingAPI/Explore/onthisday/Coordinates__2.java
+ vn.edu.usth.pj.testingAPI.Explore.onthisday.Coordinates__2
 vn/edu/usth/pj/View_Page.java
  vn.edu.usth.pj.View_Page
  vn.edu.usth.pj.View_Page$1
  vn.edu.usth.pj.View_Page$ViewHolder
 vn/edu/usth/pj/databinding/NewsLayoutBinding.java
  vn.edu.usth.pj.databinding.NewsLayoutBinding
+vn/edu/usth/pj/testingAPI/Explore/image/Thumbnail__3.java
+ vn.edu.usth.pj.testingAPI.Explore.image.Thumbnail__3
+vn/edu/usth/pj/testingAPI/Explore/onthisday/Titles__2.java
+ vn.edu.usth.pj.testingAPI.Explore.onthisday.Titles__2
+vn/edu/usth/pj/testingAPI/Service2.java
+ vn.edu.usth.pj.testingAPI.Service2
 vn/edu/usth/pj/databinding/HistoryLayoutBinding.java
  vn.edu.usth.pj.databinding.HistoryLayoutBinding
+vn/edu/usth/pj/testingAPI/Explore/mostread/Thumbnail__1.java
+ vn.edu.usth.pj.testingAPI.Explore.mostread.Thumbnail__1
 vn/edu/usth/pj/MainPage/Articles.java
  vn.edu.usth.pj.MainPage.Articles
+vn/edu/usth/pj/testingAPI/Explore/image/Description.java
+ vn.edu.usth.pj.testingAPI.Explore.image.Description
+vn/edu/usth/pj/testingAPI/Explore/Example.java
+ vn.edu.usth.pj.testingAPI.Explore.Example
+vn/edu/usth/pj/testingAPI/Explore/tfa/Timestamp.java
+ vn.edu.usth.pj.testingAPI.Explore.tfa.Timestamp
 vn/edu/usth/pj/SearchActivity/Varianttitles.java
  vn.edu.usth.pj.SearchActivity.Varianttitles
 vn/edu/usth/pj/RestAPI/Service.java
  vn.edu.usth.pj.RestAPI.Service
 vn/edu/usth/pj/Article_Activity/Container/Parse.java
  vn.edu.usth.pj.Article_Activity.Container.Parse
-vn/edu/usth/pj/testingAPI/Lastmodifier.java
- vn.edu.usth.pj.testingAPI.Lastmodifier
 vn/edu/usth/pj/databinding/ActivityMainBinding.java
  vn.edu.usth.pj.databinding.ActivityMainBinding
 vn/edu/usth/pj/databinding/ActivityRegisterBinding.java
  vn.edu.usth.pj.databinding.ActivityRegisterBinding
-vn/edu/usth/pj/testingAPI/Remaining.java
- vn.edu.usth.pj.testingAPI.Remaining
+vn/edu/usth/pj/testingAPI/Explore/onthisday/Timestamp__2.java
+ vn.edu.usth.pj.testingAPI.Explore.onthisday.Timestamp__2
 vn/edu/usth/pj/SearchActivity/Page.java
  vn.edu.usth.pj.SearchActivity.Page
+vn/edu/usth/pj/databinding/FragmentExploreBinding.java
+ vn.edu.usth.pj.databinding.FragmentExploreBinding
 vn/edu/usth/pj/MainActivity/Fragment/Search.java
  vn.edu.usth.pj.MainActivity.Fragment.Search
  vn.edu.usth.pj.MainActivity.Fragment.Search$1
@@ -116,6 +171,8 @@ vn/edu/usth/pj/databinding/FragmentSearchBinding.java
  vn.edu.usth.pj.databinding.FragmentSearchBinding
 vn/edu/usth/pj/Register.java
  vn.edu.usth.pj.Register
+vn/edu/usth/pj/testingAPI/Explore/onthisday/Thumbnail__4.java
+ vn.edu.usth.pj.testingAPI.Explore.onthisday.Thumbnail__4
 vn/edu/usth/pj/SearchActivity/Continue.java
  vn.edu.usth.pj.SearchActivity.Continue
 vn/edu/usth/pj/RestAPI/API_CER.java
@@ -124,6 +181,10 @@ vn/edu/usth/pj/databinding/FragmentAccountBinding.java
  vn.edu.usth.pj.databinding.FragmentAccountBinding
 vn/edu/usth/pj/Article_Activity/Container/Contain.java
  vn.edu.usth.pj.Article_Activity.Container.Contain
+vn/edu/usth/pj/testingAPI/Explore/tfa/Titles.java
+ vn.edu.usth.pj.testingAPI.Explore.tfa.Titles
+vn/edu/usth/pj/testingAPI/Explore/tfa/Tfa.java
+ vn.edu.usth.pj.testingAPI.Explore.tfa.Tfa
 vn/edu/usth/pj/MainActivity/MainActivity.java
  vn.edu.usth.pj.MainActivity.MainActivity
  vn.edu.usth.pj.MainActivity.MainActivity$1
@@ -131,17 +192,17 @@ vn/edu/usth/pj/MainActivity/MainActivity.java
  vn.edu.usth.pj.MainActivity.MainActivity$3
 vn/edu/usth/pj/Save_Page.java
  vn.edu.usth.pj.Save_Page
-vn/edu/usth/pj/testingAPI/Protection.java
- vn.edu.usth.pj.testingAPI.Protection
+vn/edu/usth/pj/testingAPI/Explore/news/Originalimage__1.java
+ vn.edu.usth.pj.testingAPI.Explore.news.Originalimage__1
 vn/edu/usth/pj/MainActivity/Fragment/Home.java
  vn.edu.usth.pj.MainActivity.Fragment.Home
  vn.edu.usth.pj.MainActivity.Fragment.Home$1
  vn.edu.usth.pj.MainActivity.Fragment.Home$2
-vn/edu/usth/pj/testingAPI/Section.java
- vn.edu.usth.pj.testingAPI.Section
 vn/edu/usth/pj/MainPage/Parse.java
  vn.edu.usth.pj.MainPage.Parse
+vn/edu/usth/pj/testingAPI/Explore/mostread/Mostread.java
+ vn.edu.usth.pj.testingAPI.Explore.mostread.Mostread
 vn/edu/usth/pj/database/SavedDatabase.java
  vn.edu.usth.pj.database.SavedDatabase
-vn/edu/usth/pj/testingAPI/Example.java
- vn.edu.usth.pj.testingAPI.Example
+vn/edu/usth/pj/testingAPI/Explore/news/Titles__1.java
+ vn.edu.usth.pj.testingAPI.Explore.news.Titles__1
