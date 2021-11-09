@@ -48,6 +48,13 @@ public class View_Save extends RecyclerView.Adapter<View_Save.ViewHolder> {
             public void onClick(View view) {
                 Intent i = new Intent(context, Article_Page.class);
                 i.putExtra("pageid", Save_pageArraylist.get(holder.getAdapterPosition()).getPageid());
+                i.putExtra("title", Save_pageArraylist.get(holder.getAdapterPosition()).getTitle());
+
+                if (save_page.getThumbnail() != null){
+                    i.putExtra("thumbnail", Save_pageArraylist.get(holder.getAdapterPosition()).getThumbnail());
+                }
+                context.startActivity(i);
+
                 context.startActivity(i);
             }
         });

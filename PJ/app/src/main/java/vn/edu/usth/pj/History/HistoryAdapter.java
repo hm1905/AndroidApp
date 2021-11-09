@@ -50,6 +50,12 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
             public void onClick(View view) {
                 Intent i = new Intent(context, Article_Page.class);
                 i.putExtra("pageid", HistoryAdapterArrayList.get(holder.getAdapterPosition()).getPageid());
+                i.putExtra("title", HistoryAdapterArrayList.get(holder.getAdapterPosition()).getTitle());
+
+                if (history.getThumbnail() != null){
+                    i.putExtra("thumbnail", HistoryAdapterArrayList.get(holder.getAdapterPosition()).getThumbnail());
+                }
+                context.startActivity(i);
                 context.startActivity(i);
             }
         });
