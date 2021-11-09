@@ -2683,6 +2683,11 @@ int menu toolbar 0x7f0d0004
 int mipmap ic_launcher 0x7f0e0000
 int mipmap ic_launcher_round 0x7f0e0001
 int plurals mtrl_badge_content_description 0x7f0f0000
+int string Featured_Article 0x7f100080
+int string History 0x7f100081
+int string On_The_News 0x7f100082
+int string REST_API 0x7f100083
+int string Top_Read 0x7f100084
 int string abc_action_bar_home_description 0x7f100000
 int string abc_action_bar_up_description 0x7f100001
 int string abc_action_menu_overflow_description 0x7f100002
@@ -2723,8 +2728,6 @@ int string character_counter_pattern 0x7f100024
 int string chip_text 0x7f100025
 int string clear_text_end_icon_content_description 0x7f100026
 int string copy 0x7f100027
-int string dummy_button 0x7f100028
-int string dummy_content 0x7f100029
 int string error_icon_content_description 0x7f10002a
 int string expand_button_title 0x7f10002b
 int string exposed_dropdown_menu_content_description 0x7f10002c
@@ -2797,20 +2800,16 @@ int string path_password_eye_mask_strike_through 0x7f10006e
 int string path_password_eye_mask_visible 0x7f10006f
 int string path_password_strike_through 0x7f100070
 int string preference_copied 0x7f100071
-int string r6 0x7f100072
 int string reply_title 0x7f100073
 int string search_menu_title 0x7f100074
 int string signature_title 0x7f100075
 int string status_bar_notification_info_overflow 0x7f100076
-int string steam 0x7f100077
 int string summary_collapsed_preference_list 0x7f100078
 int string sync_header 0x7f100079
 int string sync_title 0x7f10007a
-int string title_activity_fullscreen 0x7f10007b
 int string title_activity_settings 0x7f10007c
 int string v7_preference_off 0x7f10007d
 int string v7_preference_on 0x7f10007e
-int string yt 0x7f10007f
 int style AlertDialog_AppCompat 0x7f110000
 int style AlertDialog_AppCompat_Light 0x7f110001
 int style AndroidThemeColorAccentYellow 0x7f110002
@@ -5604,7 +5603,6 @@ int styleable ViewTransition_viewTransitionMode 14
 int[] styleable include { 0x7f0400e8 }
 int styleable include_constraintSet 0
 int xml preferences 0x7f130000
-int xml root_preferences 0x7f130001
 int xml searchable 0x7f130002
 int xml standalone_badge 0x7f130003
 int xml standalone_badge_gravity_bottom_end 0x7f130004

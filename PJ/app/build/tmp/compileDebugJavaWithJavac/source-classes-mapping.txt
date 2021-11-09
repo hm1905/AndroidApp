@@ -30,8 +30,6 @@ vn/edu/usth/pj/databinding/SettingsActivityBinding.java
  vn.edu.usth.pj.databinding.SettingsActivityBinding
 vn/edu/usth/pj/ViewPagerAdapter.java
  vn.edu.usth.pj.ViewPagerAdapter
-vn/edu/usth/pj/testingAPI/Explore2/Namespace.java
- vn.edu.usth.pj.testingAPI.Explore2.Namespace
 vn/edu/usth/pj/StringUtills.java
  vn.edu.usth.pj.StringUtills
 vn/edu/usth/pj/RestAPI/RetrofitAPI.java
@@ -45,6 +43,7 @@ vn/edu/usth/pj/SettingsActivity.java
  vn.edu.usth.pj.SettingsActivity
  vn.edu.usth.pj.SettingsActivity$SettingsFragment
  vn.edu.usth.pj.SettingsActivity$SettingsFragment$1
+ vn.edu.usth.pj.SettingsActivity$SettingsFragment$2
 vn/edu/usth/pj/database/History/HistoryDatabase.java
  vn.edu.usth.pj.database.History.HistoryDatabase
 vn/edu/usth/pj/testingAPI/Explore/news/Thumbnail__2.java
@@ -71,8 +70,6 @@ vn/edu/usth/pj/History/HistoryAdapter.java
  vn.edu.usth.pj.History.HistoryAdapter$ViewHolder
 vn/edu/usth/pj/database/History/HistoryDAO.java
  vn.edu.usth.pj.database.History.HistoryDAO
-vn/edu/usth/pj/testingAPI/Explore2/Titles.java
- vn.edu.usth.pj.testingAPI.Explore2.Titles
 vn/edu/usth/pj/testingAPI/Explore/news/Timestamp__1.java
  vn.edu.usth.pj.testingAPI.Explore.news.Timestamp__1
 vn/edu/usth/pj/databinding/ActivityPageBinding.java

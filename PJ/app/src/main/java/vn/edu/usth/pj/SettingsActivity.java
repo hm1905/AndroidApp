@@ -3,7 +3,10 @@ package vn.edu.usth.pj;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Configuration;
+import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.DisplayMetrics;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
@@ -15,6 +18,8 @@ import androidx.preference.Preference;
 import androidx.preference.PreferenceFragmentCompat;
 import androidx.preference.PreferenceManager;
 import androidx.preference.SwitchPreference;
+
+import java.util.Locale;
 
 public class SettingsActivity extends AppCompatActivity {
     @Override
@@ -60,6 +65,24 @@ public class SettingsActivity extends AppCompatActivity {
                 }
             });
 
+            Lpref = findPreference("Languege");
+            Lpref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
+                @Override
+                public boolean onPreferenceChange(Preference preference, Object newValue) {
+                    String lang = sp.getString("Languege", "false");
+                    if ("1".equals(lang)){
+                        changelang("en");
+
+                    }
+                    if ("2".equals(lang)){
+                        changelang("vi");
+                    }
+                    return true;
+                }
+
+            });
+
+
 //            Lpref = (ListPreference) findPreference("Font Size");
 //            Lpref.setOnPreferenceChangeListener(new Preference.OnPreferenceChangeListener() {
 //                @Override
@@ -75,5 +98,16 @@ public class SettingsActivity extends AppCompatActivity {
 //            });
 
         }
+
+        private void changelang(String language) {
+            Locale locale = new Locale(language);
+            Locale.setDefault(locale);
+            Resources resources = getResources();
+            Configuration configuration = resources.getConfiguration();
+            configuration.locale = locale;
+            resources.updateConfiguration(configuration, resources.getDisplayMetrics());
+        }
+
+
     }
 }

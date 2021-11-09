@@ -1,37 +1,16 @@
 <resources>
     <string name="app_name">WikipediA</string>
     <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_settings">Setting</string>
 
-    <!-- Preference Titles -->
-    <string name="messages_header">Messages</string>
-    <string name="sync_header">Sync</string>
+    <!-- Text -->
+    <string name="Featured_Article">Featured Article</string>
+    <string name="Top_Read">Top Read</string>
+    <string name="On_The_News">On The News</string>
+    <string name="History">History</string>
 
-    <!-- Messages Preferences -->
-    <string name="signature_title">Your signature</string>
-    <string name="reply_title">Default reply action</string>
 
-    <!-- Sync Preferences -->
-    <string name="sync_title">Sync email periodically</string>
-    <string name="attachment_title">Download incoming attachments</string>
-    <string name="attachment_summary_on">Automatically download attachments for incoming emails
-    </string>
-    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <!-- API -->
+    <string name="REST_API">https://en.wikipedia.org/api/rest_v1/</string>
 
-    <!-- Content -->
-    <string name="r6">Tom Clancy is Rainbow Six Siege is an online tactical shooter video game developed by Ubisoft Montreal and published by Ubisoft. It was released worldwide for Microsoft Windows, PlayStation 4, and Xbox One on December 1, 2015; the game was also released for PlayStation 5 and Xbox Series X/S exactly five years later on December 1, 2020. The game puts heavy emphasis on environmental destruction and cooperation between players. Each player assumes control of an attacker or a defender in different gameplay modes such as rescuing a hostage, defusing a bomb, and taking control of an objective within a room. The title has no campaign but features a series of short, offline missions called, "situations" that can be played solo. These missions have a loose narrative, focusing on recruits going through training to prepare them for future encounters with the "White Masks", a terrorist group that threatens the safety of the world.
-        Siege is an entry in the Rainbow Six series and the successor to Tom Clancy is Rainbow 6: Patriots, a tactical shooter that had a larger focus on narrative. After Patriots was eventually cancelled due to its technical shortcomings, Ubisoft decided to reboot the franchise. The team evaluated the core of the Rainbow Six franchise and believed that letting players impersonate the top counter-terrorist operatives around the world suited the game most. To create authentic siege situations, the team consulted actual counter-terrorism units and looked at real-life examples of sieges such as the 1980 Iranian Embassy siege. Powered by AnvilNext 2.0, the game also utilizes Ubisoft is RealBlast technology to create destructible environments.
-        The game received an overall positive reception from critics, with praise mostly directed to the game is tense multiplayer and focus on tactics. However, the game was criticized for its progression system and its lack of content. Initial sales were weak, but the game player base increased significantly as Ubisoft adopted a "games as a service" model for the game and subsequently released several packages of free downloadable content. Several years after the game release, some critics regarded Siege as one of the best multiplayer games in the modern market due to the improvements brought by the post-launch updates. The company partnered with ESL to make Siege an esports game. In December 2020, the game surpassed 70 million registered players across all platforms. Rainbow Six Extraction, a spin-off game featuring Siege characters, is set to be released in January 2022
-    </string>
-
-    <string name="steam">Steam is a video game digital distribution service by Valve. It was launched as a standalone software client in September 2003 as a way for Valve to provide automatic updates for their games and, expanded to include games from third-party publishers. Steam has also expanded into an online web-based and mobile digital storefront. Steam offers digital rights management (DRM), server hosting, video streaming, and social networking services. It also provides the user with installation and automatic updating of games, and community features such as friends lists and groups, cloud storage, and in-game voice and chat functionality.
-         The software provides a freely available application programming interface (API) called Steamworks, which developers can use to integrate many of Steam\'s functions into their products, including in-game achievements, microtransactions, and support for user-created content through Steam Workshop. Though initially developed for use on Microsoft Windows operating systems, versions for macOS and Linux were later released. Mobile apps were also released for iOS, Android, and Windows Phone in the 2010s. The platform also offers a small selection of other content, including design software, hardware, game soundtracks, anime, and films.
-         The Steam platform is the largest digital distribution platform for PC gaming, holding around 75% of the market share in 2013.[2] By 2017, users purchasing games through Steam totaled roughly US$4.3 billion, representing at least 18% of global PC game sales.[3] By 2019, the service had over 34,000 games with over 95 million monthly active users. The success of Steam has led to the development of a line of Steam Machine microconsoles, which include the SteamOS operating system and Steam Controllers, Steam Link devices for local game streaming, and the upcoming Steam Deck, a handheld personal computer system tailored for running Steam games.
-    </string>
-
-    <string name="yt" translatable="false">YouTube is an American online video sharing and social media platform owned by Google. It was launched in February 2005 by Steve Chen, Chad Hurley, and Jawed Karim. It is the second most visited website, with more than one billion monthly users[7] who collectively watch more than one billion hours of videos each day.[8] As of May 2019, videos were being uploaded at a rate of more than 500 hours of content per minute.[9]          In October 2006, YouTube was bought by Google for $1.65 billion.[10] Google ownership of YouTube has also changed its business model; it no longer generates revenue from advertisements alone. YouTube now offers paid content such as movies and exclusive content. YouTube and approved creators participate in Google AdSense program, which generates more revenue for both parties. It has since evolved from a small video streaming platform to a large service with reported revenues of $19.8 billion in 2020.[1]          Since its purchase by Google, YouTube has expanded beyond the website into mobile apps, network television, and the ability to link with other services. Video categories on YouTube include music videos, video clips, news, short films, feature films, documentaries, audio recordings, movie trailers, teasers, live streams, vlogs, and more. Most content is generated by individuals. This includes collaborations between YouTubers and company sponsors. Since around 2015, established media corporations such as Disney, ViacomCBS, and WarnerMedia have created and expanded their corporate YouTube channels to advertise to a larger audience.          YouTube has had a substantial social impact, influencing popular culture, internet trends, and creating multimillionaire celebrities. It has been criticized for facilitating the spread of misinformation, copyright issues, violating its users privacy, enabling censorship, and endangering child safety and wellbeing.</string>
-    <string name="title_activity_fullscreen">FullscreenActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

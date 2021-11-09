@@ -2684,6 +2684,11 @@ menu toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+string Featured_Article
+string History
+string On_The_News
+string REST_API
+string Top_Read
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -2724,8 +2729,6 @@ string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
 string copy
-string dummy_button
-string dummy_content
 string error_icon_content_description
 string expand_button_title
 string exposed_dropdown_menu_content_description
@@ -2798,20 +2801,16 @@ string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
 string preference_copied
-string r6
 string reply_title
 string search_menu_title
 string signature_title
 string status_bar_notification_info_overflow
-string steam
 string summary_collapsed_preference_list
 string sync_header
 string sync_title
-string title_activity_fullscreen
 string title_activity_settings
 string v7_preference_off
 string v7_preference_on
-string yt
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style AndroidThemeColorAccentYellow
@@ -3735,7 +3734,6 @@ styleable ViewStubCompat android_id android_layout android_inflatedId
 styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration ifTagNotSet ifTagSet motionInterpolator motionTarget onStateTransition pathMotionArc setsTag transitionDisable upDuration viewTransitionMode
 styleable include constraintSet
 xml preferences
-xml root_preferences
 xml searchable
 xml standalone_badge
 xml standalone_badge_gravity_bottom_end
