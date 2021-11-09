@@ -4,12 +4,12 @@ package vn.edu.usth.pj.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -33,7 +33,7 @@ public final class FragmentExploreBinding implements ViewBinding {
   public final RecyclerView newsRecycle;
 
   @NonNull
-  public final Button searchviewHome;
+  public final AppCompatImageButton searchviewHome;
 
   @NonNull
   public final MaterialCardView tfa;
@@ -57,10 +57,10 @@ public final class FragmentExploreBinding implements ViewBinding {
   public final RecyclerView topreadRecycle;
 
   private FragmentExploreBinding(@NonNull ScrollView rootView, @NonNull TextView featured,
-      @NonNull TextView news, @NonNull RecyclerView newsRecycle, @NonNull Button searchviewHome,
-      @NonNull MaterialCardView tfa, @NonNull TextView tfaDesc, @NonNull TextView tfaExtract,
-      @NonNull ImageView tfaImg, @NonNull TextView tfaTitle, @NonNull TextView topread,
-      @NonNull RecyclerView topreadRecycle) {
+      @NonNull TextView news, @NonNull RecyclerView newsRecycle,
+      @NonNull AppCompatImageButton searchviewHome, @NonNull MaterialCardView tfa,
+      @NonNull TextView tfaDesc, @NonNull TextView tfaExtract, @NonNull ImageView tfaImg,
+      @NonNull TextView tfaTitle, @NonNull TextView topread, @NonNull RecyclerView topreadRecycle) {
     this.rootView = rootView;
     this.featured = featured;
     this.news = news;
@@ -121,7 +121,7 @@ public final class FragmentExploreBinding implements ViewBinding {
       }
 
       id = R.id.searchview_home;
-      Button searchviewHome = ViewBindings.findChildViewById(rootView, id);
+      AppCompatImageButton searchviewHome = ViewBindings.findChildViewById(rootView, id);
       if (searchviewHome == null) {
         break missingId;
       }

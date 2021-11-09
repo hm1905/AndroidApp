@@ -27,6 +27,7 @@ import vn.edu.usth.pj.testingAPI.REST_BASE;
 import vn.edu.usth.pj.testingAPI.Service2;
 
 import android.text.format.DateFormat;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -181,7 +182,7 @@ public class Explore extends Fragment {
         });
 
         //Open search act
-        Button button = (Button) rootView.findViewById(R.id.searchview_home);
+        ImageButton button = (ImageButton) rootView.findViewById(R.id.searchview_home);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

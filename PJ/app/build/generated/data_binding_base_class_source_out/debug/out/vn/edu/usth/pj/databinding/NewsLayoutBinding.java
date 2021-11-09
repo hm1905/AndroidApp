@@ -8,9 +8,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -18,7 +18,7 @@ import vn.edu.usth.pj.R;
 
 public final class NewsLayoutBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final MaterialCardView rootView;
 
   @NonNull
   public final TextView newsStory;
@@ -26,7 +26,7 @@ public final class NewsLayoutBinding implements ViewBinding {
   @NonNull
   public final ImageView newsThumb;
 
-  private NewsLayoutBinding(@NonNull CardView rootView, @NonNull TextView newsStory,
+  private NewsLayoutBinding(@NonNull MaterialCardView rootView, @NonNull TextView newsStory,
       @NonNull ImageView newsThumb) {
     this.rootView = rootView;
     this.newsStory = newsStory;
@@ -35,7 +35,7 @@ public final class NewsLayoutBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public MaterialCardView getRoot() {
     return rootView;
   }
 
@@ -72,7 +72,7 @@ public final class NewsLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new NewsLayoutBinding((CardView) rootView, newsStory, newsThumb);
+      return new NewsLayoutBinding((MaterialCardView) rootView, newsStory, newsThumb);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

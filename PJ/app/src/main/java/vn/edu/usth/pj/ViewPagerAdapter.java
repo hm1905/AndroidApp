@@ -25,7 +25,7 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
             case 2: return new Account();
             case 3: return new Saved();
         }
-        return new Home();
+        return new Explore();
     }
 
     @Override

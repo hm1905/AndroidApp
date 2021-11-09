@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -83,7 +84,7 @@ public class Search extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_search, container, false);
-        Button button = (Button) rootView.findViewById(R.id.searchview);
+        ImageButton button = (ImageButton) rootView.findViewById(R.id.searchview);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

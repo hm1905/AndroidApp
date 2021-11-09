@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
@@ -31,14 +32,14 @@ public final class FragmentSearchBinding implements ViewBinding {
   public final RecyclerView searchHistory;
 
   @NonNull
-  public final Button searchview;
+  public final AppCompatImageButton searchview;
 
   @NonNull
   public final TextView textHistory;
 
   private FragmentSearchBinding(@NonNull RelativeLayout rootView, @NonNull Button deleteHistory,
       @NonNull RelativeLayout historyFrame, @NonNull RecyclerView searchHistory,
-      @NonNull Button searchview, @NonNull TextView textHistory) {
+      @NonNull AppCompatImageButton searchview, @NonNull TextView textHistory) {
     this.rootView = rootView;
     this.deleteHistory = deleteHistory;
     this.historyFrame = historyFrame;
@@ -93,7 +94,7 @@ public final class FragmentSearchBinding implements ViewBinding {
       }
 
       id = R.id.searchview;
-      Button searchview = ViewBindings.findChildViewById(rootView, id);
+      AppCompatImageButton searchview = ViewBindings.findChildViewById(rootView, id);
       if (searchview == null) {
         break missingId;
       }
