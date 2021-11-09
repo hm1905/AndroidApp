@@ -1,6 +1,8 @@
 package vn.edu.usth.pj.MainActivity.Fragment;
 
 import android.content.DialogInterface;
+import android.graphics.PorterDuff;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -81,6 +83,9 @@ public class Saved extends Fragment {
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
         inflater.inflate(R.menu.save_menu, menu);
         super.onCreateOptionsMenu(menu, inflater);
+        Drawable yourdrawable = menu.getItem(0).getIcon();
+        yourdrawable.mutate();
+        yourdrawable.setColorFilter(getResources().getColor(R.color.black), PorterDuff.Mode.SRC_IN);
     }
 
 

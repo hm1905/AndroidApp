@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_search.xml.flat",
-        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\fragment_search.xml"
-    },
-    {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_find_in_page_24.xml.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\drawable\\ic_baseline_find_in_page_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_search.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\fragment_search.xml"
     },
     {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\menu_toolbar.xml.flat",
