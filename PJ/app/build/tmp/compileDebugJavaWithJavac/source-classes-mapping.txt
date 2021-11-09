@@ -53,6 +53,8 @@ vn/edu/usth/pj/databinding/FragmentHomeBinding.java
  vn.edu.usth.pj.databinding.FragmentHomeBinding
 vn/edu/usth/pj/BuildConfig.java
  vn.edu.usth.pj.BuildConfig
+vn/edu/usth/pj/databinding/FragmentSettingBinding.java
+ vn.edu.usth.pj.databinding.FragmentSettingBinding
 vn/edu/usth/pj/databinding/TopreadLayoutBinding.java
  vn.edu.usth.pj.databinding.TopreadLayoutBinding
 vn/edu/usth/pj/Article_Activity/Article_FM.java

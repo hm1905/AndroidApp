@@ -52,7 +52,6 @@ public class MainActivity extends AppCompatActivity {
                 switch (position){
                     case 0:
                         bottomNavigationView.getMenu().findItem(R.id.home).setChecked(true);
-                        getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + getString(R.string.app_name) + "</font>"));
                         break;
                     case 1:
                         bottomNavigationView.getMenu().findItem(R.id.search).setChecked(true);

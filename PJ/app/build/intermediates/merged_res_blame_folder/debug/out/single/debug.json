@@ -140,6 +140,10 @@
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_launcher_foreground.xml"
     },
     {
+        "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_setting.xml.flat",
+        "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\layout\\fragment_setting.xml"
+    },
+    {
         "merged": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },

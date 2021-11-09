@@ -2564,6 +2564,7 @@ layout fragment_explore
 layout fragment_home
 layout fragment_saved
 layout fragment_search
+layout fragment_setting
 layout history_layout
 layout image_frame
 layout material_chip_input_combo
