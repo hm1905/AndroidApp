@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".Article_Activity.Article_Page">
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -19,10 +18,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        app:menu="@menu/toolbar" />
+        app:menu="@menu/toolbar">
+
+    </androidx.appcompat.widget.Toolbar>
 
 
     <ScrollView
+        android:id="@+id/scrollView2"
         android:layout_width="match_parent"
         android:layout_height="550dp"
         app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView_page"
@@ -54,5 +56,46 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
         app:menu="@menu/page_menu" />
+
+    <RelativeLayout
+        android:id="@+id/searchtx"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:visibility="invisible">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_in_page"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Searching"
+            android:textColorHint="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/nextButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/search_in_page"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/prevButton"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/nextButton"/>
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/end"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_toRightOf="@+id/prevButton"/>
+
+    </RelativeLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

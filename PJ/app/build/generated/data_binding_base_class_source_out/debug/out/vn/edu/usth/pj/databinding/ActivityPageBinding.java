@@ -5,8 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.webkit.WebView;
+import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.AppCompatImageButton;
+import androidx.appcompat.widget.SearchView;
 import androidx.appcompat.widget.Toolbar;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
@@ -25,17 +29,44 @@ public final class ActivityPageBinding implements ViewBinding {
   public final BottomNavigationView bottomNavigationViewPage;
 
   @NonNull
+  public final AppCompatImageButton end;
+
+  @NonNull
+  public final AppCompatImageButton nextButton;
+
+  @NonNull
   public final WebView pageview;
+
+  @NonNull
+  public final AppCompatImageButton prevButton;
+
+  @NonNull
+  public final ScrollView scrollView2;
+
+  @NonNull
+  public final SearchView searchInPage;
+
+  @NonNull
+  public final RelativeLayout searchtx;
 
   @NonNull
   public final Toolbar toolbar;
 
   private ActivityPageBinding(@NonNull ConstraintLayout rootView,
-      @NonNull BottomNavigationView bottomNavigationViewPage, @NonNull WebView pageview,
+      @NonNull BottomNavigationView bottomNavigationViewPage, @NonNull AppCompatImageButton end,
+      @NonNull AppCompatImageButton nextButton, @NonNull WebView pageview,
+      @NonNull AppCompatImageButton prevButton, @NonNull ScrollView scrollView2,
+      @NonNull SearchView searchInPage, @NonNull RelativeLayout searchtx,
       @NonNull Toolbar toolbar) {
     this.rootView = rootView;
     this.bottomNavigationViewPage = bottomNavigationViewPage;
+    this.end = end;
+    this.nextButton = nextButton;
     this.pageview = pageview;
+    this.prevButton = prevButton;
+    this.scrollView2 = scrollView2;
+    this.searchInPage = searchInPage;
+    this.searchtx = searchtx;
     this.toolbar = toolbar;
   }
 
@@ -72,9 +103,45 @@ public final class ActivityPageBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.end;
+      AppCompatImageButton end = ViewBindings.findChildViewById(rootView, id);
+      if (end == null) {
+        break missingId;
+      }
+
+      id = R.id.nextButton;
+      AppCompatImageButton nextButton = ViewBindings.findChildViewById(rootView, id);
+      if (nextButton == null) {
+        break missingId;
+      }
+
       id = R.id.pageview;
       WebView pageview = ViewBindings.findChildViewById(rootView, id);
       if (pageview == null) {
+        break missingId;
+      }
+
+      id = R.id.prevButton;
+      AppCompatImageButton prevButton = ViewBindings.findChildViewById(rootView, id);
+      if (prevButton == null) {
+        break missingId;
+      }
+
+      id = R.id.scrollView2;
+      ScrollView scrollView2 = ViewBindings.findChildViewById(rootView, id);
+      if (scrollView2 == null) {
+        break missingId;
+      }
+
+      id = R.id.search_in_page;
+      SearchView searchInPage = ViewBindings.findChildViewById(rootView, id);
+      if (searchInPage == null) {
+        break missingId;
+      }
+
+      id = R.id.searchtx;
+      RelativeLayout searchtx = ViewBindings.findChildViewById(rootView, id);
+      if (searchtx == null) {
         break missingId;
       }
 
@@ -84,8 +151,8 @@ public final class ActivityPageBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityPageBinding((ConstraintLayout) rootView, bottomNavigationViewPage,
-          pageview, toolbar);
+      return new ActivityPageBinding((ConstraintLayout) rootView, bottomNavigationViewPage, end,
+          nextButton, pageview, prevButton, scrollView2, searchInPage, searchtx, toolbar);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

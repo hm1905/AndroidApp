@@ -86,6 +86,9 @@ vn/edu/usth/pj/Article_Activity/Article_Page.java
  vn.edu.usth.pj.Article_Activity.Article_Page
  vn.edu.usth.pj.Article_Activity.Article_Page$1
  vn.edu.usth.pj.Article_Activity.Article_Page$2
+ vn.edu.usth.pj.Article_Activity.Article_Page$3
+ vn.edu.usth.pj.Article_Activity.Article_Page$4
+ vn.edu.usth.pj.Article_Activity.Article_Page$5
 vn/edu/usth/pj/SearchActivity/Query.java
  vn.edu.usth.pj.SearchActivity.Query
 vn/edu/usth/pj/testingAPI/Explore/tfa/Thumbnail.java
@@ -146,6 +149,8 @@ vn/edu/usth/pj/MainPage/Articles.java
  vn.edu.usth.pj.MainPage.Articles
 vn/edu/usth/pj/testingAPI/Explore/image/Description.java
  vn.edu.usth.pj.testingAPI.Explore.image.Description
+vn/edu/usth/pj/databinding/ActivityPage2Binding.java
+ vn.edu.usth.pj.databinding.ActivityPage2Binding
 vn/edu/usth/pj/testingAPI/Explore/Example.java
  vn.edu.usth.pj.testingAPI.Explore.Example
 vn/edu/usth/pj/testingAPI/Explore/tfa/Timestamp.java
@@ -198,6 +203,8 @@ vn/edu/usth/pj/Save_Page.java
  vn.edu.usth.pj.Save_Page
 vn/edu/usth/pj/testingAPI/Explore/news/Originalimage__1.java
  vn.edu.usth.pj.testingAPI.Explore.news.Originalimage__1
+vn/edu/usth/pj/databinding/DesignBinding.java
+ vn.edu.usth.pj.databinding.DesignBinding
 vn/edu/usth/pj/MainActivity/Fragment/Home.java
  vn.edu.usth.pj.MainActivity.Fragment.Home
  vn.edu.usth.pj.MainActivity.Fragment.Home$1

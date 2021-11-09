@@ -23,11 +23,12 @@
 
         <ImageView
             android:id="@+id/history_img"
-            android:layout_width="70dp"
-            android:layout_height="70dp"
-            android:maxHeight="70dp"
-            android:layout_marginLeft="59dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="70dp"
             android:layout_toRightOf="@id/history_title"
-            android:src="@drawable/yt" />
+            android:src="@drawable/yt"
+            android:scaleType="fitXY"/>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
