@@ -165,6 +165,7 @@ public class Explore extends Fragment {
                             Intent i = new Intent(getContext(), Article_Page.class);
                             i.putExtra("pageid", explore.getTfa().getPageid());
                             i.putExtra("title", explore.getTfa().getTitle());
+                            i.putExtra("desc", explore.getTfa().getDescription());
                             if (explore.getTfa().getOriginalimage().getSource() != null){
                                 i.putExtra("thumbnail", explore.getTfa().getOriginalimage().getSource());
                             }

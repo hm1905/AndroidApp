@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">PJ</string>
+    <string name="app_name">WikipediA</string>
     <string name="title_activity_settings" translatable="false">Cài Đặt</string>
     <string name="Featured_Article" translatable="false">Bài Viết Trọn Lọc</string>
     <string name="Top_Read" translatable="false">Bài Đọc Nhiều Nhất</string>

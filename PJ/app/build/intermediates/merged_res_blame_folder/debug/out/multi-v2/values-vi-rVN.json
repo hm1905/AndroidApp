@@ -6,18 +6,18 @@
                 {
                     "source": "C:\\Users\\ADMIN\\AndroidStudioProjects\\PJ\\app\\src\\main\\res\\values-vi-rVN\\strings.xml",
                     "from": {
-                        "startLines": "4,7,6,8,5,2,3",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "180,413,343,479,265,57,98",
-                        "endColumns": "83,64,68,95,76,39,80",
-                        "endOffsets": "259,473,407,570,337,92,174"
+                        "startLines": "-1,-1,-1,-1,-1,2,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,4,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,57,-1",
+                        "endColumns": "-1,-1,-1,-1,-1,46,-1",
+                        "endOffsets": "-1,-1,-1,-1,-1,99,-1"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7,8",
                         "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,139,204,273,369,446,486",
-                        "endColumns": "83,64,68,95,76,39,80",
-                        "endOffsets": "134,199,268,364,441,481,562"
+                        "startOffsets": "55,139,204,273,369,446,493",
+                        "endColumns": "83,64,68,95,76,46,80",
+                        "endOffsets": "134,199,268,364,441,488,569"
                     }
                 }
             ]

@@ -54,6 +54,7 @@ public class TopRead_Adapter extends RecyclerView.Adapter<TopRead_Adapter.ViewHo
                 Intent i = new Intent(context, Article_Page.class);
                 i.putExtra("pageid", TopreadArrayList.get(holder.getAdapterPosition()).getPageid());
                 i.putExtra("title", TopreadArrayList.get(holder.getAdapterPosition()).getTitle());
+                i.putExtra("desc", TopreadArrayList.get(holder.getAdapterPosition()).getDescription());
                 if (article.getThumbnail().getSource() != null){
                     i.putExtra("thumbnail", TopreadArrayList.get(holder.getAdapterPosition()).getThumbnail().getSource());
                 }
