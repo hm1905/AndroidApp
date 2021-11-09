@@ -29,6 +29,7 @@ import vn.edu.usth.pj.testingAPI.Service2;
 import android.text.format.DateFormat;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -62,6 +63,8 @@ public class Explore extends Fragment {
     private TextView tfa_title, tfa_desc, tfa_extract;
     private ImageView tfa_thumb;
     private CardView cardView;
+
+    private ProgressBar progressBar;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -126,6 +129,9 @@ public class Explore extends Fragment {
         tfa_extract = rootView.findViewById(R.id.tfa_extract);
         cardView = rootView.findViewById(R.id.tfa);
 
+        progressBar = rootView.findViewById(R.id.progressBar);
+        progressBar.setVisibility(View.VISIBLE);
+
         rmostread = rootView.findViewById(R.id.topread_recycle);
         rmostread.setLayoutManager(new LinearLayoutManager(getContext()));
 
@@ -140,10 +146,12 @@ public class Explore extends Fragment {
             @Override
             public void onResponse(Call<Example> call, Response<Example> response) {
                 if (response.isSuccessful()){
+                    progressBar.setVisibility(View.GONE);
                     Example explore = response.body();
                     tfa_title.setText(explore.getTfa().getTitles().getDisplay());
                     tfa_desc.setText(explore.getTfa().getDescription());
                     tfa_extract.setText(explore.getTfa().getExtract());
+                    Log.v("extract", explore.getTfa().getExtract());
 
                     try{
                         Picasso.get().load(explore.getTfa().getOriginalimage().getSource()).into(tfa_thumb);
@@ -156,6 +164,10 @@ public class Explore extends Fragment {
                         public void onClick(View view) {
                             Intent i = new Intent(getContext(), Article_Page.class);
                             i.putExtra("pageid", explore.getTfa().getPageid());
+                            i.putExtra("title", explore.getTfa().getTitle());
+                            if (explore.getTfa().getOriginalimage().getSource() != null){
+                                i.putExtra("thumbnail", explore.getTfa().getOriginalimage().getSource());
+                            }
                             getContext().startActivity(i);
                         }
                     });

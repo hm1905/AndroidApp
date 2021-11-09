@@ -25,6 +25,7 @@ public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
     FloatingActionButton floatAct;
     ViewPager2 viewPager2;
+    ViewPagerAdapter adapter;
 
 
 
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager2 = (ViewPager2) findViewById(R.id.reFrame);
         bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottomnavigationbar);
 
-        ViewPagerAdapter adapter = new ViewPagerAdapter(this);
+        adapter = new ViewPagerAdapter(this);
         viewPager2.setAdapter(adapter);
         adapter.notifyDataSetChanged();
 
@@ -53,10 +54,12 @@ public class MainActivity extends AppCompatActivity {
                     case 0:
                         bottomNavigationView.getMenu().findItem(R.id.home).setChecked(true);
                         getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + getString(R.string.app_name) + "</font>"));
+                        adapter.notifyDataSetChanged();
                         break;
                     case 1:
                         bottomNavigationView.getMenu().findItem(R.id.search).setChecked(true);
                         getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Search" + "</font>"));
+                        adapter.notifyDataSetChanged();
                         break;
                     case 2:
                         bottomNavigationView.getMenu().findItem(R.id.personal).setChecked(true);
@@ -64,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
                     case 3:
                         bottomNavigationView.getMenu().findItem(R.id.saved).setChecked(true);
                         getSupportActionBar().setTitle(Html.fromHtml("<font color=\"black\">" + "Saved"+ "</font>"));
+                        adapter.notifyDataSetChanged();
                         break;
                 }
             }
@@ -111,6 +115,13 @@ public class MainActivity extends AppCompatActivity {
                 //getSupportFragmentManager().beginTransaction().replace(R.id.reFrame,new Account()).commit();
             }
         });
+
+    }
+
+    @Override
+    public void onRestart() {
+        super.onRestart();
+        recreate();
 
     }
 }

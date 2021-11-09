@@ -1,5 +1,7 @@
 package vn.edu.usth.pj;
 
+import static androidx.viewpager.widget.PagerAdapter.POSITION_NONE;
+
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
@@ -31,6 +33,10 @@ public class ViewPagerAdapter extends FragmentStateAdapter {
     @Override
     public int getItemCount() {
         return 4;
+    }
+
+    public int getItemPosition(Object object) {
+        return POSITION_NONE;
     }
 
 

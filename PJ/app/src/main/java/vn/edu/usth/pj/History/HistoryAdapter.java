@@ -56,7 +56,6 @@ public class HistoryAdapter extends RecyclerView.Adapter<HistoryAdapter.ViewHold
                     i.putExtra("thumbnail", HistoryAdapterArrayList.get(holder.getAdapterPosition()).getThumbnail());
                 }
                 context.startActivity(i);
-                context.startActivity(i);
             }
         });
 
