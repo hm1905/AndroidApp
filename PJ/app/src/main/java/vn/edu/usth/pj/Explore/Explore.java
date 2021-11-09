@@ -108,7 +108,7 @@ public class Explore extends Fragment {
         String yyyy = Integer.toString(y);
 
         Integer m = Calendar.getInstance().get(Calendar.MONTH);
-        String mm = Integer.toString(m);
+        String mm = Integer.toString(m+1);
 
         Integer d = Calendar.getInstance().get(Calendar.DAY_OF_MONTH);
 
@@ -122,6 +122,7 @@ public class Explore extends Fragment {
         tfa_title = rootView.findViewById(R.id.tfa_title);
         tfa_desc = rootView.findViewById(R.id.tfa_desc);
         tfa_thumb = rootView.findViewById(R.id.tfa_img);
+        tfa_extract = rootView.findViewById(R.id.tfa_extract);
         cardView = rootView.findViewById(R.id.tfa);
 
         rmostread = rootView.findViewById(R.id.topread_recycle);
@@ -132,7 +133,7 @@ public class Explore extends Fragment {
 
 
         REST_BASE restapi = Service2.createService2(REST_BASE.class);
-        Call<Example> call = restapi.getExplore("2021", "11", "08");
+        Call<Example> call = restapi.getExplore(yyyy, mm, dd);
 
         call.enqueue(new Callback<Example>() {
             @Override
@@ -141,10 +142,13 @@ public class Explore extends Fragment {
                     Example explore = response.body();
                     tfa_title.setText(explore.getTfa().getTitles().getDisplay());
                     tfa_desc.setText(explore.getTfa().getDescription());
-                    //tfa_extract.setText(explore.getTfa().getExtract());
-//                    if(explore.getTfa().getOriginalimage().getSource() != null){
-//                        Picasso.get().load(explore.getTfa().getOriginalimage().getSource()).into(tfa_thumb);
-//                    }
+                    tfa_extract.setText(explore.getTfa().getExtract());
+
+                    try{
+                        Picasso.get().load(explore.getTfa().getOriginalimage().getSource()).into(tfa_thumb);
+                    } catch (Exception e){
+                        Log.e("Thumb", e.getMessage());
+                    }
 
                     cardView.setOnClickListener(new View.OnClickListener() {
                         @Override

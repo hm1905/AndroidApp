@@ -2,6 +2,7 @@ package vn.edu.usth.pj.Explore.Adapter;
 
 import android.content.Context;
 import android.text.Html;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -44,18 +45,28 @@ public class News_Adapter extends RecyclerView.Adapter<News_Adapter.ViewHolder>{
         holder.news_title.setText(Html.fromHtml(news.getStory()));
 
         List<Link> link = news.getLinks();
-//        for (Link i:link){
+        for (Link i:link){
 //            if (i.getThumbnail().getSource() != null){
 //                Picasso.get().load(i.getThumbnail().getSource()).into(holder.news_thumb);
 //            }
-//        }
+            try{
+                Picasso.get().load(i.getThumbnail().getSource()).into(holder.news_thumb);
+            } catch (Exception e){
+                Log.e("News thumb", e.getMessage());
+            }
+        }
 
 
     }
 
     @Override
     public int getItemCount() {
-        return News_AdapterArrayList == null ? 0 : News_AdapterArrayList.size();
+        if(News_AdapterArrayList.size()>limit){
+            return limit;
+        }
+        else{
+            return News_AdapterArrayList == null ? 0 : News_AdapterArrayList.size();
+        }
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder{
