@@ -7,9 +7,8 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import vn.edu.usth.pj.Explore.Explore;
+import vn.edu.usth.pj.MainActivity.Fragment.Explore;
 import vn.edu.usth.pj.MainActivity.Fragment.Account;
-import vn.edu.usth.pj.MainActivity.Fragment.Home;
 import vn.edu.usth.pj.MainActivity.Fragment.Saved;
 import vn.edu.usth.pj.MainActivity.Fragment.Search;
 

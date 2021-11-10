@@ -1,4 +1,4 @@
 # AndroidApp
 
-* Design + Slide : Nguyen Quy Minh
 * Design + Code : Nguyen Hoang Minh
+* Design + Slide : Nguyen Quy Minh

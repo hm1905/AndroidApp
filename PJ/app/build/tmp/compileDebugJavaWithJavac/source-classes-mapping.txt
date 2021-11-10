@@ -1,8 +1,3 @@
-vn/edu/usth/pj/Explore/Explore.java
- vn.edu.usth.pj.Explore.Explore
- vn.edu.usth.pj.Explore.Explore$1
- vn.edu.usth.pj.Explore.Explore$1$1
- vn.edu.usth.pj.Explore.Explore$2
 vn/edu/usth/pj/SearchActivity/Search_Adapter.java
  vn.edu.usth.pj.SearchActivity.Search_Adapter
  vn.edu.usth.pj.SearchActivity.Search_Adapter$1
@@ -11,6 +6,11 @@ vn/edu/usth/pj/databinding/ActivitySearchBinding.java
  vn.edu.usth.pj.databinding.ActivitySearchBinding
 vn/edu/usth/pj/testingAPI/Explore/tfa/Coordinates.java
  vn.edu.usth.pj.testingAPI.Explore.tfa.Coordinates
+vn/edu/usth/pj/MainActivity/Fragment/Explore.java
+ vn.edu.usth.pj.MainActivity.Fragment.Explore
+ vn.edu.usth.pj.MainActivity.Fragment.Explore$1
+ vn.edu.usth.pj.MainActivity.Fragment.Explore$1$1
+ vn.edu.usth.pj.MainActivity.Fragment.Explore$2
 vn/edu/usth/pj/Explore/Adapter/TopRead_Adapter.java
  vn.edu.usth.pj.Explore.Adapter.TopRead_Adapter
  vn.edu.usth.pj.Explore.Adapter.TopRead_Adapter$1

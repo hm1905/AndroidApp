@@ -135,11 +135,11 @@ public class Home extends Fragment {
 //                textV.getSettings().setUseWideViewPort(true);
 //
 
-
-                String link = StringUtills.fromHtml(main.getParse().getText());
-
-
-                textV.loadData(link, "text/html; charset=UTF-8", null);
+//
+//                String link = StringUtills.fromHtml(main.getParse().getText());
+//
+//
+//                textV.loadData(link, "text/html; charset=UTF-8", null);
             }
 
             @Override
