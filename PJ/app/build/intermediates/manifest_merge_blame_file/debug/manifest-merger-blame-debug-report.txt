@@ -15,7 +15,7 @@
 11-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:5:22-64
 12
 13    <application
-13-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:7:5-48:19
+13-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:7:5-57:19
 14        android:allowBackup="true"
 14-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:8:9-35
 15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -36,88 +36,95 @@
 23-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:14:9-40
 24        <activity
 24-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:15:9-24:20
-25            android:name="vn.edu.usth.pj.SearchActivity.Searching_Activity"
-25-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:16:13-62
-26            android:configChanges="orientation|keyboardHidden|screenSize"
-26-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:17:13-74
-27            android:label="Searching" >
-27-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:18:13-38
-28            <intent-filter>
-28-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:19:13-21:29
-29                <action android:name="android.intent.action.SEARCH" />
-29-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:20:17-71
-29-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:20:25-68
-30            </intent-filter>
-31
-32            <meta-data
-32-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:22:13-23:53
-33                android:name="android.app.searchable"
-33-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:22:24-61
-34                android:resource="@xml/searchable" />
-34-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:23:17-51
-35        </activity>
-36        <activity
-36-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:25:9-27:40
-37            android:name="vn.edu.usth.pj.Register"
-37-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:26:13-37
-38            android:exported="false" />
-38-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:27:13-37
-39        <activity
-39-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:28:9-35:20
-40            android:name="vn.edu.usth.pj.SettingsActivity"
-40-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:29:13-45
-41            android:label="Settings"
-41-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:30:13-37
-42            android:parentActivityName="vn.edu.usth.pj.MainActivity.MainActivity" >
-42-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:31:13-68
-43            <meta-data
-43-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:32:13-34:62
-44                android:name="android.support.PARENT_ACTIVITY"
-44-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:33:17-63
-45                android:value=".MainActivity.MainActivity" />
-45-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:34:17-59
-46        </activity>
-47        <activity
-47-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:36:9-38:39
-48            android:name="vn.edu.usth.pj.Article_Activity.Article_Page"
-48-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:37:13-58
-49            android:exported="true" />
-49-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:38:13-36
-50        <activity
-50-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:39:9-47:20
-51            android:name="vn.edu.usth.pj.MainActivity.MainActivity"
-51-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:40:13-54
-52            android:exported="true" >
-52-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:41:13-36
-53            <intent-filter>
-53-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:42:13-46:29
-54                <action android:name="android.intent.action.MAIN" />
-54-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:43:17-69
-54-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:43:25-66
-55
-56                <category android:name="android.intent.category.LAUNCHER" />
-56-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:45:17-77
-56-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:45:27-74
-57            </intent-filter>
-58        </activity>
-59
-60        <provider
-60-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
-61            android:name="com.squareup.picasso.PicassoProvider"
-61-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
-62            android:authorities="vn.edu.usth.pj.com.squareup.picasso"
-62-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
-63            android:exported="false" />
-63-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
-64
-65        <service
-65-->[androidx.room:room-runtime:2.2.5] C:\Users\ADMIN\.gradle\caches\transforms-3\ae7ec84eac41d80167df28f5e3fc9ef3\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
-66            android:name="androidx.room.MultiInstanceInvalidationService"
-66-->[androidx.room:room-runtime:2.2.5] C:\Users\ADMIN\.gradle\caches\transforms-3\ae7ec84eac41d80167df28f5e3fc9ef3\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
-67            android:directBootAware="true"
-67-->[androidx.room:room-runtime:2.2.5] C:\Users\ADMIN\.gradle\caches\transforms-3\ae7ec84eac41d80167df28f5e3fc9ef3\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
-68            android:exported="false" />
-68-->[androidx.room:room-runtime:2.2.5] C:\Users\ADMIN\.gradle\caches\transforms-3\ae7ec84eac41d80167df28f5e3fc9ef3\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
-69    </application>
-70
-71</manifest>
+25            android:name="vn.edu.usth.pj.SplashActivity"
+25-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:16:13-43
+26            android:exported="true" >
+26-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:17:13-36
+27            <intent-filter>
+27-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:19:13-23:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:20:17-69
+28-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:20:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:22:17-77
+30-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:22:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:26:9-37:20
+34            android:name="vn.edu.usth.pj.SearchActivity.Searching_Activity"
+34-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:27:13-62
+35            android:configChanges="orientation|keyboardHidden|screenSize"
+35-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:28:13-74
+36            android:label="Searching" >
+36-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:29:13-38
+37            <intent-filter>
+37-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:30:13-32:29
+38                <action android:name="android.intent.action.SEARCH" />
+38-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:31:17-71
+38-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:31:25-68
+39            </intent-filter>
+40
+41            <meta-data
+41-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:34:13-36:54
+42                android:name="android.app.searchable"
+42-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:35:17-54
+43                android:resource="@xml/searchable" />
+43-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:36:17-51
+44        </activity>
+45        <activity
+45-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:38:9-40:40
+46            android:name="vn.edu.usth.pj.Register"
+46-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:39:13-37
+47            android:exported="false" />
+47-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:40:13-37
+48        <activity
+48-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:41:9-48:20
+49            android:name="vn.edu.usth.pj.SettingsActivity"
+49-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:42:13-45
+50            android:label="Settings"
+50-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:43:13-37
+51            android:parentActivityName="vn.edu.usth.pj.MainActivity.MainActivity" >
+51-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:44:13-68
+52            <meta-data
+52-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:45:13-47:62
+53                android:name="android.support.PARENT_ACTIVITY"
+53-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:46:17-63
+54                android:value=".MainActivity.MainActivity" />
+54-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:47:17-59
+55        </activity>
+56        <activity
+56-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:49:9-51:39
+57            android:name="vn.edu.usth.pj.Article_Activity.Article_Page"
+57-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:50:13-58
+58            android:exported="true" />
+58-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:51:13-36
+59        <activity
+59-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:52:9-56:20
+60            android:name="vn.edu.usth.pj.MainActivity.MainActivity"
+60-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:53:13-54
+61            android:exported="true" >
+61-->C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\AndroidManifest.xml:54:13-36
+62        </activity>
+63
+64        <provider
+64-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+65            android:name="com.squareup.picasso.PicassoProvider"
+65-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+66            android:authorities="vn.edu.usth.pj.com.squareup.picasso"
+66-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+67            android:exported="false" />
+67-->[com.squareup.picasso:picasso:2.71828] C:\Users\ADMIN\.gradle\caches\transforms-3\98e20666298f5c569737b582658ec884\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+68
+69        <service
+69-->[androidx.room:room-runtime:2.2.5] C:\Users\ADMIN\.gradle\caches\transforms-3\ae7ec84eac41d80167df28f5e3fc9ef3\transformed\room-runtime-2.2.5\AndroidManifest.xml:25:9-28:40
+70            android:name="androidx.room.MultiInstanceInvalidationService"
+70-->[androidx.room:room-runtime:2.2.5] C:\Users\ADMIN\.gradle\caches\transforms-3\ae7ec84eac41d80167df28f5e3fc9ef3\transformed\room-runtime-2.2.5\AndroidManifest.xml:26:13-74
+71            android:directBootAware="true"
+71-->[androidx.room:room-runtime:2.2.5] C:\Users\ADMIN\.gradle\caches\transforms-3\ae7ec84eac41d80167df28f5e3fc9ef3\transformed\room-runtime-2.2.5\AndroidManifest.xml:27:13-43
+72            android:exported="false" />
+72-->[androidx.room:room-runtime:2.2.5] C:\Users\ADMIN\.gradle\caches\transforms-3\ae7ec84eac41d80167df28f5e3fc9ef3\transformed\room-runtime-2.2.5\AndroidManifest.xml:28:13-37
+73    </application>
+74
+75</manifest>

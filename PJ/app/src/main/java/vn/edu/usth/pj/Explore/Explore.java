@@ -64,7 +64,6 @@ public class Explore extends Fragment {
     private ImageView tfa_thumb;
     private CardView cardView;
 
-    private ProgressBar progressBar;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -129,8 +128,6 @@ public class Explore extends Fragment {
         tfa_extract = rootView.findViewById(R.id.tfa_extract);
         cardView = rootView.findViewById(R.id.tfa);
 
-        progressBar = rootView.findViewById(R.id.progressBar);
-        progressBar.setVisibility(View.VISIBLE);
 
         rmostread = rootView.findViewById(R.id.topread_recycle);
         rmostread.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -146,7 +143,6 @@ public class Explore extends Fragment {
             @Override
             public void onResponse(Call<Example> call, Response<Example> response) {
                 if (response.isSuccessful()){
-                    progressBar.setVisibility(View.GONE);
                     Example explore = response.body();
                     tfa_title.setText(explore.getTfa().getTitles().getDisplay());
                     tfa_desc.setText(explore.getTfa().getDescription());
@@ -180,6 +176,7 @@ public class Explore extends Fragment {
                     newAP = new News_Adapter(explore.getNews() ,getContext());
                     rnews.setAdapter(newAP);
                     newAP.notifyDataSetChanged();
+
                 }
                 else{
                     Toast.makeText(getContext(), "Failed", Toast.LENGTH_SHORT).show();

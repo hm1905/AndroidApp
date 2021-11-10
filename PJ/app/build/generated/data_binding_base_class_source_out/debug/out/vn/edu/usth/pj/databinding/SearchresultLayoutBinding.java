@@ -8,9 +8,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.cardview.widget.CardView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.card.MaterialCardView;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -18,7 +18,7 @@ import vn.edu.usth.pj.R;
 
 public final class SearchresultLayoutBinding implements ViewBinding {
   @NonNull
-  private final CardView rootView;
+  private final MaterialCardView rootView;
 
   @NonNull
   public final TextView Rdesc;
@@ -29,7 +29,7 @@ public final class SearchresultLayoutBinding implements ViewBinding {
   @NonNull
   public final TextView Rtitle;
 
-  private SearchresultLayoutBinding(@NonNull CardView rootView, @NonNull TextView Rdesc,
+  private SearchresultLayoutBinding(@NonNull MaterialCardView rootView, @NonNull TextView Rdesc,
       @NonNull ImageView Rimg, @NonNull TextView Rtitle) {
     this.rootView = rootView;
     this.Rdesc = Rdesc;
@@ -39,7 +39,7 @@ public final class SearchresultLayoutBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public CardView getRoot() {
+  public MaterialCardView getRoot() {
     return rootView;
   }
 
@@ -82,7 +82,7 @@ public final class SearchresultLayoutBinding implements ViewBinding {
         break missingId;
       }
 
-      return new SearchresultLayoutBinding((CardView) rootView, Rdesc, Rimg, Rtitle);
+      return new SearchresultLayoutBinding((MaterialCardView) rootView, Rdesc, Rimg, Rtitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

@@ -104,6 +104,9 @@ vn/edu/usth/pj/testingAPI/Explore/image/Image.java
  vn.edu.usth.pj.testingAPI.Explore.image.Image
 vn/edu/usth/pj/testingAPI/Explore/news/Coordinates__1.java
  vn.edu.usth.pj.testingAPI.Explore.news.Coordinates__1
+vn/edu/usth/pj/SplashActivity.java
+ vn.edu.usth.pj.SplashActivity
+ vn.edu.usth.pj.SplashActivity$1
 vn/edu/usth/pj/SearchActivity/Pageprops.java
  vn.edu.usth.pj.SearchActivity.Pageprops
 vn/edu/usth/pj/testingAPI/Explore/news/Link.java
@@ -195,6 +198,7 @@ vn/edu/usth/pj/MainActivity/MainActivity.java
  vn.edu.usth.pj.MainActivity.MainActivity
  vn.edu.usth.pj.MainActivity.MainActivity$1
  vn.edu.usth.pj.MainActivity.MainActivity$2
+ vn.edu.usth.pj.MainActivity.MainActivity$2$1
  vn.edu.usth.pj.MainActivity.MainActivity$3
 vn/edu/usth/pj/Save_Page.java
  vn.edu.usth.pj.Save_Page
@@ -212,5 +216,7 @@ vn/edu/usth/pj/testingAPI/Explore/mostread/Mostread.java
  vn.edu.usth.pj.testingAPI.Explore.mostread.Mostread
 vn/edu/usth/pj/database/SavedDatabase.java
  vn.edu.usth.pj.database.SavedDatabase
+vn/edu/usth/pj/databinding/SplashBinding.java
+ vn.edu.usth.pj.databinding.SplashBinding
 vn/edu/usth/pj/testingAPI/Explore/news/Titles__1.java
  vn.edu.usth.pj.testingAPI.Explore.news.Titles__1

@@ -1329,6 +1329,7 @@ color secondary_text_default_material_dark
 color secondary_text_default_material_light
 color secondary_text_disabled_material_dark
 color secondary_text_disabled_material_light
+color splash1
 color switch_thumb_disabled_material_dark
 color switch_thumb_disabled_material_light
 color switch_thumb_material_dark
@@ -1883,6 +1884,7 @@ drawable ic_baseline_keyboard_arrow_up_24
 drawable ic_baseline_person_24
 drawable ic_baseline_save_24
 drawable ic_baseline_search_24
+drawable ic_baseline_search_white_24
 drawable ic_baseline_settings_24
 drawable ic_baseline_shuffle_24
 drawable ic_baseline_translate_24
@@ -1932,10 +1934,15 @@ drawable preference_list_divider_material
 drawable r6
 drawable search
 drawable search_bg
+drawable splash
 drawable steam
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable wiki
+drawable wiki1
+drawable wiki2
+drawable wiki3
 drawable yt
 id ALT
 id BOTTOM_END
@@ -2292,7 +2299,7 @@ id pin
 id position
 id postLayout
 id prevButton
-id progressBar
+id progress
 id progress_circular
 id progress_horizontal
 id radio
@@ -2321,6 +2328,7 @@ id scrollIndicatorUp
 id scrollView
 id scrollView2
 id scrollable
+id scrollview
 id search
 id search_act
 id search_badge
@@ -2659,6 +2667,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout settings_activity
+layout splash
 layout support_simple_spinner_dropdown_item
 layout test_action_chip
 layout test_chip_zero_corner_radius
@@ -2684,10 +2693,10 @@ menu toolbar
 mipmap ic_launcher
 mipmap ic_launcher_round
 plurals mtrl_badge_content_description
+string ACTION_API
 string Featured_Article
 string History
 string On_The_News
-string REST_API
 string Top_Read
 string abc_action_bar_home_description
 string abc_action_bar_up_description

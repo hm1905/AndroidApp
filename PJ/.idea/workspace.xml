@@ -28,11 +28,11 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="resourceFile" />
         <option value="Interface" />
-        <option value="layoutResourceFile" />
         <option value="Class" />
         <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -73,9 +73,12 @@
       <recent name="vn.edu.usth.pj" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\res\drawable" />
+      <recent name="C:\Users\ADMIN\AndroidStudioProjects\PJ\app\src\main\res\drawable-v24" />
       <recent name="C:\Users\ADMIN\AndroidStudioProjects\PJ\app\sampledata\Cover" />
+    </key>
+    <key name="android.template.-1204377589">
+      <recent name="vn.edu.usth.pj" />
     </key>
     <key name="android.template.849881647">
       <recent name="vn.edu.usth.pj" />

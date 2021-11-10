@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="8dp"
-    app:cardCornerRadius="4dp">
+    app:cardCornerRadius="30dp"
+    app:strokeColor="@color/black"
+    app:strokeWidth="3dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -15,41 +17,32 @@
             android:id="@+id/Rtitle"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
-            app:layout_constraintBottom_toTopOf="@+id/Rdesc"
-            app:layout_constraintEnd_toStartOf="@+id/Rimg"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
             android:textColor="@color/black"
             android:textSize="18sp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/Rdesc"
             android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
-            android:layout_marginBottom="62dp"
-            android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toStartOf="@+id/Rimg"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/Rtitle" />
+            android:layout_below="@+id/Rtitle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="52dp"
+            android:text="TextView" />
 
         <ImageView
             android:id="@+id/Rimg"
             android:layout_width="100dp"
             android:layout_height="100dp"
-            android:layout_marginStart="13dp"
-            android:layout_marginEnd="2dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/Rtitle"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:srcCompat="@tools:sample/avatars"
-            android:scaleType="fitXY"/>
+            android:layout_marginTop="3dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/Rtitle"
+            android:scaleType="fitXY"
+            tools:srcCompat="@tools:sample/avatars" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </RelativeLayout>
 
 
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

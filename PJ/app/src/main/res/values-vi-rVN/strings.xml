@@ -6,5 +6,6 @@
     <string name="Top_Read" translatable="false">Bài Đọc Nhiều Nhất</string>
     <string name="On_The_News" translatable="false">Tin Tức</string>
     <string name="History" translatable="false">Lịch Sử</string>
-    <string name="REST_API" translatable="false">https://vi.wikipedia.org/api/rest_v1/</string>
+
+    <string name="ACTION_API" translatable="false">https://vi.wikipedia.org/</string>
 </resources>

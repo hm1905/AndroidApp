@@ -46,7 +46,8 @@
                 android:src="@drawable/ic_baseline_person_24"
                 app:layout_anchor="@+id/bottomappbar"
                 app:layout_anchorGravity="center"
-                tools:ignore="SpeakableTextPresentCheck" />
+                tools:ignore="SpeakableTextPresentCheck"
+                android:backgroundTint="#939191"/>
 
         </androidx.coordinatorlayout.widget.CoordinatorLayout>
     </FrameLayout>

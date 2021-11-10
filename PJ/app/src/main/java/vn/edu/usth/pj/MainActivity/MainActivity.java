@@ -7,16 +7,20 @@ import androidx.fragment.app.Fragment;
 import androidx.viewpager2.widget.ViewPager2;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.MenuItem;
+import android.view.MotionEvent;
 import android.view.View;
+import android.widget.ScrollView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+import vn.edu.usth.pj.Explore.Explore;
 import vn.edu.usth.pj.R;
 import vn.edu.usth.pj.SettingsActivity;
 import vn.edu.usth.pj.ViewPagerAdapter;
@@ -88,6 +92,13 @@ public class MainActivity extends AppCompatActivity {
                 {
                     case R.id.home :
                         viewPager2.setCurrentItem(0);
+                        item.setOnMenuItemClickListener(new MenuItem.OnMenuItemClickListener() {
+                            @Override
+                            public boolean onMenuItemClick(MenuItem menuItem) {
+                                recreate();
+                                return false;
+                            }
+                        });
 //                        getSupportFragmentManager().beginTransaction().replace(R.id.reFrame,new Home()).commit();
                        break;
                     case R.id.search :
@@ -115,6 +126,7 @@ public class MainActivity extends AppCompatActivity {
                 //getSupportFragmentManager().beginTransaction().replace(R.id.reFrame,new Account()).commit();
             }
         });
+
 
     }
 

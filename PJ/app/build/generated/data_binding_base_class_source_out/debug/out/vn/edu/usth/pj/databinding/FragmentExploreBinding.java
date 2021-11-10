@@ -5,7 +5,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ProgressBar;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -34,7 +33,7 @@ public final class FragmentExploreBinding implements ViewBinding {
   public final RecyclerView newsRecycle;
 
   @NonNull
-  public final ProgressBar progressBar;
+  public final ScrollView scrollview;
 
   @NonNull
   public final AppCompatImageButton searchviewHome;
@@ -61,7 +60,7 @@ public final class FragmentExploreBinding implements ViewBinding {
   public final RecyclerView topreadRecycle;
 
   private FragmentExploreBinding(@NonNull ScrollView rootView, @NonNull TextView featured,
-      @NonNull TextView news, @NonNull RecyclerView newsRecycle, @NonNull ProgressBar progressBar,
+      @NonNull TextView news, @NonNull RecyclerView newsRecycle, @NonNull ScrollView scrollview,
       @NonNull AppCompatImageButton searchviewHome, @NonNull MaterialCardView tfa,
       @NonNull TextView tfaDesc, @NonNull TextView tfaExtract, @NonNull ImageView tfaImg,
       @NonNull TextView tfaTitle, @NonNull TextView topread, @NonNull RecyclerView topreadRecycle) {
@@ -69,7 +68,7 @@ public final class FragmentExploreBinding implements ViewBinding {
     this.featured = featured;
     this.news = news;
     this.newsRecycle = newsRecycle;
-    this.progressBar = progressBar;
+    this.scrollview = scrollview;
     this.searchviewHome = searchviewHome;
     this.tfa = tfa;
     this.tfaDesc = tfaDesc;
@@ -125,11 +124,7 @@ public final class FragmentExploreBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.progressBar;
-      ProgressBar progressBar = ViewBindings.findChildViewById(rootView, id);
-      if (progressBar == null) {
-        break missingId;
-      }
+      ScrollView scrollview = (ScrollView) rootView;
 
       id = R.id.searchview_home;
       AppCompatImageButton searchviewHome = ViewBindings.findChildViewById(rootView, id);
@@ -180,7 +175,7 @@ public final class FragmentExploreBinding implements ViewBinding {
       }
 
       return new FragmentExploreBinding((ScrollView) rootView, featured, news, newsRecycle,
-          progressBar, searchviewHome, tfa, tfaDesc, tfaExtract, tfaImg, tfaTitle, topread,
+          scrollview, searchviewHome, tfa, tfaDesc, tfaExtract, tfaImg, tfaTitle, topread,
           topreadRecycle);
     }
     String missingId = rootView.getResources().getResourceName(id);

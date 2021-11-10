@@ -6,6 +6,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Article_Activity.Article_Page">
 
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true">
+
+    </ProgressBar>
+
 
     <ScrollView
         android:id="@+id/scrollView2"

@@ -66,12 +66,15 @@ public class TopRead_Adapter extends RecyclerView.Adapter<TopRead_Adapter.ViewHo
 
     @Override
     public int getItemCount() {
-        if (TopreadArrayList.size() > limit){
-            return limit;
-        }
-        else{
-            return TopreadArrayList == null ? 0 : TopreadArrayList.size();
-        }
+        if (TopreadArrayList != null) {
+            if (TopreadArrayList.size() > limit) {
+                return limit;
+            } else {
+                return TopreadArrayList == null ? 0 : TopreadArrayList.size();
+            }
+        } else {
+            return 0;
+    }
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {

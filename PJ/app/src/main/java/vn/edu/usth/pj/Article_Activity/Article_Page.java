@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatImageButton;
 import androidx.appcompat.widget.SearchView;
+import androidx.core.widget.ContentLoadingProgressBar;
 import androidx.fragment.app.Fragment;
 
 import android.content.Context;
@@ -25,6 +26,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.webkit.WebView;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -57,6 +59,8 @@ public class Article_Page extends AppCompatActivity {
     private WebView webView;
     private RelativeLayout container;
 
+    ProgressBar progressBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -77,6 +81,9 @@ public class Article_Page extends AppCompatActivity {
             thumbnail = "none";
         }
         setPageContent(pageid);
+
+        progressBar = findViewById(R.id.progress);
+        progressBar.setVisibility(VISIBLE);
 
         History history = new History(pageid, title ,thumbnail);
         HistoryDatabase.getInstance(getApplicationContext()).historyDAO().insertAll(history);
@@ -124,24 +131,6 @@ public class Article_Page extends AppCompatActivity {
             }
         });
 
-//        search.setMinEms(30);
-//        search.setSingleLine(true);
-//
-//
-//        search.setOnKeyListener(new View.OnKeyListener() {
-//            public boolean onKey(View v, int keyCode, KeyEvent event) {
-//                if ((event.getAction() == KeyEvent.ACTION_DOWN) && ((keyCode == KeyEvent.KEYCODE_ENTER))) {
-//                    webView.findAllAsync(search.getText().toString());
-//                    try {
-//                        Method m = WebView.class.getMethod("setFindIsUp", Boolean.TYPE);
-//                        m.invoke(webView, true);
-//                    } catch (Exception ignored) {
-//                    }
-//                }
-//                return false;
-//            }
-//        });
-
         search.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
             @Override
             public boolean onQueryTextSubmit(String query) {
@@ -172,6 +161,7 @@ public class Article_Page extends AppCompatActivity {
                 Article_FM fm = response.body();
 
                 webView.loadData(fm.getParse().getText(), "text/html; charset=UTF-8", null);
+                progressBar.setVisibility(View.GONE);
             }
 
             @Override
@@ -189,5 +179,15 @@ public class Article_Page extends AppCompatActivity {
         setTitle("");
         inflater.inflate(R.menu.toolbar, menu);
         return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.app_bar_search:
+                Intent i = new Intent(getApplicationContext(), Searching_Activity.class);
+                startActivity(i);
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
