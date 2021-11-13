@@ -2051,7 +2051,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id button2
 id button3
 id buttonPanel
 id cache_measures
@@ -2263,7 +2262,6 @@ id never
 id neverCompleteToEnd
 id neverCompleteToStart
 id news
-id news_ap
 id news_recycle
 id news_story
 id news_thumb
@@ -2424,10 +2422,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
 id textTop
-id textView4
-id textView5
-id textView6
-id textView7
 id text_history
 id text_input_end_icon
 id text_input_error_icon
@@ -2559,7 +2553,6 @@ layout abc_tooltip
 layout activity_main
 layout activity_page
 layout activity_page2
-layout activity_register
 layout activity_search
 layout custom_dialog
 layout design
@@ -2581,7 +2574,6 @@ layout design_text_input_start_icon
 layout expand_button
 layout fragment_account
 layout fragment_explore
-layout fragment_home
 layout fragment_saved
 layout fragment_search
 layout fragment_setting

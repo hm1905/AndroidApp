@@ -6,7 +6,7 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="error" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="AutoImportSettings">
@@ -58,6 +58,7 @@
     <property name="android-custom-viewC:/Users/ADMIN/AndroidStudioProjects/PJ/app/src/main/java/vn/edu/usth/pj/search/Search_Adapter.java_Search_Adapter_DIMENSIONS" value="1080&#10;1920" />
     <property name="android-custom-viewC:/Users/ADMIN/AndroidStudioProjects/PJ/app/src/main/java/vn/edu/usth/pj/search/Search_Adapter.java_Search_Adapter_WRAP_CONTENT_W" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../android-retrofit-video-master" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -85,6 +86,10 @@
     </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="vn.edu.usth.pj" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="vn.edu.usth.pj.Database.History" />
+      <recent name="vn.edu.usth.pj.database" />
     </key>
     <key name="android.template.-930653739">
       <recent name="vn.edu.usth.pj" />

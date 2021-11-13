@@ -1,12 +1,10 @@
-package vn.edu.usth.pj.database.History;
+package vn.edu.usth.pj.Database.History;
 
 import android.content.Context;
 
 import androidx.room.Database;
 import androidx.room.Room;
 import androidx.room.RoomDatabase;
-
-import vn.edu.usth.pj.History.History;
 
 
 @Database(entities = {History.class}, version = 1)

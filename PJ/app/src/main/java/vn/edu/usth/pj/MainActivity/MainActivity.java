@@ -18,7 +18,6 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import vn.edu.usth.pj.R;
 import vn.edu.usth.pj.SettingsActivity;
-import vn.edu.usth.pj.ViewPagerAdapter;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;

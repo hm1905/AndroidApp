@@ -12,9 +12,8 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import vn.edu.usth.pj.R;
-import vn.edu.usth.pj.RestAPI.RetrofitAPI;
-import vn.edu.usth.pj.RestAPI.Service;
-import vn.edu.usth.pj.testingAPI.Service2;
+import vn.edu.usth.pj.ActionAPI.RetrofitAPI;
+import vn.edu.usth.pj.ActionAPI.Service;
 
 
 public class Searching_Activity extends AppCompatActivity {

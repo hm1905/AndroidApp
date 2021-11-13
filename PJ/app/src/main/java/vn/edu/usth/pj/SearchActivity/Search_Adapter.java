@@ -16,8 +16,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 
-import vn.edu.usth.pj.Article_Activity.Article_Page;
-import vn.edu.usth.pj.History.History;
+import vn.edu.usth.pj.ArticleActivity.Article;
 import vn.edu.usth.pj.R;
 
 
@@ -49,7 +48,7 @@ public class Search_Adapter extends RecyclerView.Adapter<Search_Adapter.ViewHold
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(context, Article_Page.class);
+                Intent i = new Intent(context, Article.class);
                 i.putExtra("pageid", Search_AdapterArraylist.get(holder.getAdapterPosition()).getPageid());
                 i.putExtra("title", Search_AdapterArraylist.get(holder.getAdapterPosition()).getTitle());
                 i.putExtra("desc", Search_AdapterArraylist.get(holder.getAdapterPosition()).getDescription());

@@ -2050,7 +2050,6 @@ int id bounce 0x7f090066
 int id bounceBoth 0x7f090067
 int id bounceEnd 0x7f090068
 int id bounceStart 0x7f090069
-int id button2 0x7f09006a
 int id button3 0x7f09006b
 int id buttonPanel 0x7f09006c
 int id cache_measures 0x7f09006d
@@ -2262,7 +2261,6 @@ int id never 0x7f09013a
 int id neverCompleteToEnd 0x7f09013b
 int id neverCompleteToStart 0x7f09013c
 int id news 0x7f09013d
-int id news_ap 0x7f09013e
 int id news_recycle 0x7f09013f
 int id news_story 0x7f090140
 int id news_thumb 0x7f090141
@@ -2423,10 +2421,6 @@ int id textSpacerNoButtons 0x7f0901da
 int id textSpacerNoTitle 0x7f0901db
 int id textStart 0x7f0901dc
 int id textTop 0x7f0901dd
-int id textView4 0x7f0901de
-int id textView5 0x7f0901df
-int id textView6 0x7f0901e0
-int id textView7 0x7f0901e1
 int id text_history 0x7f0901e2
 int id text_input_end_icon 0x7f0901e3
 int id text_input_error_icon 0x7f0901e4
@@ -2558,7 +2552,6 @@ int layout abc_tooltip 0x7f0c001b
 int layout activity_main 0x7f0c001c
 int layout activity_page 0x7f0c001d
 int layout activity_page2 0x7f0c001e
-int layout activity_register 0x7f0c001f
 int layout activity_search 0x7f0c0020
 int layout custom_dialog 0x7f0c0021
 int layout design 0x7f0c0022
@@ -2580,7 +2573,6 @@ int layout design_text_input_start_icon 0x7f0c0031
 int layout expand_button 0x7f0c0032
 int layout fragment_account 0x7f0c0033
 int layout fragment_explore 0x7f0c0034
-int layout fragment_home 0x7f0c0035
 int layout fragment_saved 0x7f0c0036
 int layout fragment_search 0x7f0c0037
 int layout fragment_setting 0x7f0c0038

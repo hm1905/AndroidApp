@@ -1,4 +1,4 @@
-package vn.edu.usth.pj.database.History;
+package vn.edu.usth.pj.Database.History;
 
 import androidx.room.DatabaseConfiguration;
 import androidx.room.InvalidationTracker;
@@ -85,7 +85,7 @@ public final class HistoryDatabase_Impl extends HistoryDatabase {
         final TableInfo _infoHistory = new TableInfo("History", _columnsHistory, _foreignKeysHistory, _indicesHistory);
         final TableInfo _existingHistory = TableInfo.read(_db, "History");
         if (! _infoHistory.equals(_existingHistory)) {
-          return new RoomOpenHelper.ValidationResult(false, "History(vn.edu.usth.pj.History.History).\n"
+          return new RoomOpenHelper.ValidationResult(false, "History(vn.edu.usth.pj.Database.History.History).\n"
                   + " Expected:\n" + _infoHistory + "\n"
                   + " Found:\n" + _existingHistory);
         }

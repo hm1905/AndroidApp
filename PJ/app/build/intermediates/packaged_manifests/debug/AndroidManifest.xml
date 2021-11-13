@@ -15,6 +15,7 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:configChanges="orientation|screenSize|locale"
         android:debuggable="true"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -43,9 +44,6 @@
                 android:resource="@xml/searchable" />
         </activity>
         <activity
-            android:name="vn.edu.usth.pj.Register"
-            android:exported="false" />
-        <activity
             android:name="vn.edu.usth.pj.SettingsActivity"
             android:label="Settings"
             android:parentActivityName="vn.edu.usth.pj.MainActivity.MainActivity" >
@@ -54,7 +52,7 @@
                 android:value=".MainActivity.MainActivity" />
         </activity>
         <activity
-            android:name="vn.edu.usth.pj.Article_Activity.Article_Page"
+            android:name="vn.edu.usth.pj.ArticleActivity.Article"
             android:exported="true" />
         <activity
             android:name="vn.edu.usth.pj.MainActivity.MainActivity"

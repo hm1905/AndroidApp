@@ -1,0 +1,52 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 3,
+    "identityHash": "1e16a9b22dc826312b8fd8ce38a65c5f",
+    "entities": [
+      {
+        "tableName": "Saved",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`pageid` INTEGER, `title` TEXT, `desc` TEXT, `thumbnail` TEXT, PRIMARY KEY(`pageid`))",
+        "fields": [
+          {
+            "fieldPath": "pageid",
+            "columnName": "pageid",
+            "affinity": "INTEGER",
+            "notNull": false
+          },
+          {
+            "fieldPath": "title",
+            "columnName": "title",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "desc",
+            "columnName": "desc",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "thumbnail",
+            "columnName": "thumbnail",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "pageid"
+          ],
+          "autoGenerate": false
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '1e16a9b22dc826312b8fd8ce38a65c5f')"
+    ]
+  }
+}

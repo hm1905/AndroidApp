@@ -1,4 +1,4 @@
-package vn.edu.usth.pj.database.History;
+package vn.edu.usth.pj.Database.History;
 
 import android.database.Cursor;
 import androidx.room.EntityDeletionOrUpdateAdapter;
@@ -17,7 +17,6 @@ import java.lang.StringBuilder;
 import java.lang.SuppressWarnings;
 import java.util.ArrayList;
 import java.util.List;
-import vn.edu.usth.pj.History.History;
 
 @SuppressWarnings({"unchecked", "deprecation"})
 public final class HistoryDAO_Impl implements HistoryDAO {
