@@ -4,3 +4,4 @@
 * Design + Present + Report Editor(AndroidAppReport) + Slide : Nguyen Quy Minh
 * Present + Report(Mobile Application Report) : Dang Hung Kien
 * Present + Report(Mobile Application Report) : Pham Trung Kien
+* Le Phuoc Long
